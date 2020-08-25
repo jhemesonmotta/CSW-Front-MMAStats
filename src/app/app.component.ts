@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
-import { DataService } from './data.service';
+import { DataService } from './services/norris/data.service';
 
 @Component({
   selector: 'app-root',
