@@ -10,6 +10,7 @@ import { RankingsBaseComponent } from './components/rankings/rankings-base/ranki
 import { RankingsLutadoresComponent } from './components/rankings/rankings-lutadores/rankings-lutadores.component';
 import { RankingsAcademiasComponent } from './components/rankings/rankings-academias/rankings-academias.component';
 import { RankingsNacoesComponent } from './components/rankings/rankings-nacoes/rankings-nacoes.component';
+import { ContatoComponent } from './components/contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { RankingsNacoesComponent } from './components/rankings/rankings-nacoes/r
     RankingsLutadoresComponent,
     RankingsAcademiasComponent,
     RankingsNacoesComponent,
+    ContatoComponent,
   ],
   imports: [
     BrowserModule,
