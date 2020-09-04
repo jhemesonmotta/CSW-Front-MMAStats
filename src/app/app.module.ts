@@ -5,30 +5,20 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './services/norris/data.service';
-import { LoginComponent } from './components/login/login.component';
-import { HomeComponent } from './components/home/home.component';
-import { CadastroFuncoesComponent } from './components/admin-components/cadastro-funcoes/cadastro-funcoes.component';
-import { CadastroHorariosComponent } from './components/admin-components/cadastro-horarios/cadastro-horarios.component';
-import { CadastroUsuarioComponent } from './components/usuario/cadastro-usuario/cadastro-usuario.component';
-import { CadastroBandaComponent } from './components/banda/cadastro-banda/cadastro-banda.component';
-import { CadastroEnsaioComponent } from './components/ensaio/cadastro-ensaio/cadastro-ensaio.component';
-import { VisualizarEnsaioComponent } from './components/ensaio/visualizar-ensaio/visualizar-ensaio.component';
-import { VisualizarBandaComponent } from './components/banda/visualizar-banda/visualizar-banda.component';
-import { VisualizarUsuarioComponent } from './components/usuario/visualizar-usuario/visualizar-usuario.component';
+import { TaleOfTheTapeComponent } from './components/tale-of-the-tape/tale-of-the-tape.component';
+import { RankingsBaseComponent } from './components/rankings/rankings-base/rankings-base.component';
+import { RankingsLutadoresComponent } from './components/rankings/rankings-lutadores/rankings-lutadores.component';
+import { RankingsAcademiasComponent } from './components/rankings/rankings-academias/rankings-academias.component';
+import { RankingsNacoesComponent } from './components/rankings/rankings-nacoes/rankings-nacoes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    HomeComponent,
-    CadastroFuncoesComponent,
-    CadastroHorariosComponent,
-    CadastroUsuarioComponent,
-    CadastroBandaComponent,
-    CadastroEnsaioComponent,
-    VisualizarEnsaioComponent,
-    VisualizarBandaComponent,
-    VisualizarUsuarioComponent
+    TaleOfTheTapeComponent,
+    RankingsBaseComponent,
+    RankingsLutadoresComponent,
+    RankingsAcademiasComponent,
+    RankingsNacoesComponent,
   ],
   imports: [
     BrowserModule,
