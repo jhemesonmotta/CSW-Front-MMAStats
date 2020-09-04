@@ -35,7 +35,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>AppComponent</li>
+  <li>TaleOfTheTapeComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/app.component.ts</code>
+    <code>src/app/components/tale-of-the-tape/tale-of-the-tape.component.ts</code>
 </p>
 
 
@@ -91,19 +91,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-root</code></td>
+                <td class="col-md-9"><code>app-tale-of-the-tape</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./app.component.css</code></td>
+                <td class="col-md-9"><code>./tale-of-the-tape.component.css</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./app.component.html</code></td>
+                <td class="col-md-9"><code>./tale-of-the-tape.component.html</code></td>
             </tr>
 
 
@@ -121,20 +121,6 @@
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Properties</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <a href="#title">title</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -165,57 +151,15 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(updates: <a href="https://angular.io/api/service-worker/SwUpdate" target="_blank">SwUpdate</a>, data: <a href="../injectables/DataService.html">DataService</a>)</code>
+<code>constructor()</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/app.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/components/tale-of-the-tape/tale-of-the-tape.component.ts:8</a></div>
                             </td>
                         </tr>
 
-                <tr>
-                    <td class="col-md-4">
-                            <div>
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>updates</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="https://angular.io/api/service-worker/SwUpdate" target="_blank" >SwUpdate</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                        <td>data</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="../injectables/DataService.html" target="_self" >DataService</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                    </td>
-                </tr>
             </tbody>
         </table>
 </section>
@@ -251,8 +195,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="20"
-                            class="link-to-prism">src/app/app.component.ts:20</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="12"
+                            class="link-to-prism">src/app/components/tale-of-the-tape/tale-of-the-tape.component.ts:12</a></div>
                 </td>
             </tr>
 
@@ -269,85 +213,39 @@
         </tbody>
     </table>
 </section>
-    <section>
-    
-        <h3 id="inputs">
-            Properties
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="title"></a>
-                        <span class="name">
-                            <b>
-                            title</b>
-                            <a href="#title"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/app.component.ts:11</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-</section>
 
 </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { SwUpdate } from &#x27;@angular/service-worker&#x27;;
-import { DataService } from &#x27;./services/norris/data.service&#x27;;
 
 @Component({
-  selector: &#x27;app-root&#x27;,
-  templateUrl: &#x27;./app.component.html&#x27;,
-  styleUrls: [&#x27;./app.component.css&#x27;]
+  selector: &#x27;app-tale-of-the-tape&#x27;,
+  templateUrl: &#x27;./tale-of-the-tape.component.html&#x27;,
+  styleUrls: [&#x27;./tale-of-the-tape.component.css&#x27;]
 })
-export class AppComponent implements OnInit {
-  title: any;
+export class TaleOfTheTapeComponent implements OnInit {
 
-  constructor(updates: SwUpdate, private data: DataService) {
-    updates.available.subscribe(event &#x3D;&gt; {
-      // recarrega a página se houverem updates
-      updates.activateUpdate().then(() &#x3D;&gt; document.location.reload());
-    });
-  }
+  constructor() { }
 
   ngOnInit() {
-    this.data.gimmeJokes().subscribe((response) &#x3D;&gt; {
-      this.title &#x3D; response.value;
-      console.log(&#x27;this.title&#x27;);
-      console.log(this.title);
-    });
   }
+
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;!--The content below is only a placeholder and can be replaced.--&gt;
-  &lt;h1&gt;
-    {{ title }}
-  &lt;/h1&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;p&gt;
+  tale-of-the-tape works!
+&lt;/p&gt;
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
-                    <code>./app.component.css</code>
+                    <code>./tale-of-the-tape.component.css</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss"></code></pre>
     </div>
@@ -377,10 +275,10 @@ export class AppComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!--The content below is only a placeholder and can be replaced.-->  <h1>    {{ title }}  </h1></div>'
+        var COMPONENT_TEMPLATE = '<div><p>  tale-of-the-tape works!</p></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'RankingsAcademiasComponent', 'selector': 'app-rankings-academias'},{'name': 'RankingsBaseComponent', 'selector': 'app-rankings-base'},{'name': 'RankingsLutadoresComponent', 'selector': 'app-rankings-lutadores'},{'name': 'RankingsNacoesComponent', 'selector': 'app-rankings-nacoes'},{'name': 'TaleOfTheTapeComponent', 'selector': 'app-tale-of-the-tape'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'AppComponent'};
+    var ACTUAL_COMPONENT = {'name': 'TaleOfTheTapeComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -415,7 +313,7 @@ export class AppComponent implements OnInit {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'AppComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'TaleOfTheTapeComponent.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
