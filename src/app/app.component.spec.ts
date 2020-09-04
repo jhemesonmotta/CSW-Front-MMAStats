@@ -6,6 +6,8 @@ import { environment } from 'src/environments/environment';
 import { FooterComponent } from './components/partials/footer/footer.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { SidebarComponent } from './components/partials/sidebar/sidebar.component';
+import { HomeComponent } from './components/home/home.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -14,9 +16,11 @@ describe('AppComponent', () => {
         AppComponent,
         FooterComponent,
         HeaderComponent,
-        SidebarComponent
+        SidebarComponent,
+        HomeComponent
       ], imports: [
         HttpClientModule,
+        RouterTestingModule,
         ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
       ],
        providers: [

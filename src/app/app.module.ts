@@ -14,6 +14,8 @@ import { ContatoComponent } from './components/contato/contato.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { SidebarComponent } from './components/partials/sidebar/sidebar.component';
 import { FooterComponent } from './components/partials/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { routes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -27,8 +29,10 @@ import { FooterComponent } from './components/partials/footer/footer.component';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
+    HomeComponent,
   ],
   imports: [
+    routes,
     BrowserModule,
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
