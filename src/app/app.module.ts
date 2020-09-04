@@ -13,6 +13,7 @@ import { RankingsNacoesComponent } from './components/rankings/rankings-nacoes/r
 import { ContatoComponent } from './components/contato/contato.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { SidebarComponent } from './components/partials/sidebar/sidebar.component';
+import { FooterComponent } from './components/partials/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SidebarComponent } from './components/partials/sidebar/sidebar.componen
     ContatoComponent,
     HeaderComponent,
     SidebarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

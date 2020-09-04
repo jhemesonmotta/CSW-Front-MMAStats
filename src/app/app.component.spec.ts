@@ -3,12 +3,18 @@ import { AppComponent } from './app.component';
 import { SwUpdate, ServiceWorkerModule } from '@angular/service-worker';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { FooterComponent } from './components/partials/footer/footer.component';
+import { HeaderComponent } from './components/partials/header/header.component';
+import { SidebarComponent } from './components/partials/sidebar/sidebar.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        FooterComponent,
+        HeaderComponent,
+        SidebarComponent
       ], imports: [
         HttpClientModule,
         ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
