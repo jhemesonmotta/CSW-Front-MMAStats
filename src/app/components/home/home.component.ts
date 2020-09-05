@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   viewcol6: any[] = [480, 200];
+  viewcolGauge: any[] = [680, 230];
+
+  colorScheme = {
+    domain: ['#5AA454', '#E44D25', '#7aa3e5', '#a8385d', '#aae3f5']
+  };
 
   totalLutas: Array<any> = [
     {
@@ -24,6 +29,21 @@ export class HomeComponent implements OnInit {
     {
       name: 'Empate/NC',
       value: 142
+    }
+  ];
+
+  totalLutadores: Array<any> = [
+    {
+      name: 'USA',
+      value: 612
+    },
+    {
+      name: 'Brazil',
+      value: 370
+    },
+    {
+      name: 'Russia',
+      value: 104
     }
   ];
 

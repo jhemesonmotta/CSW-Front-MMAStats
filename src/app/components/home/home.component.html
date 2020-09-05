@@ -1,45 +1,76 @@
 <div class="row">
-  <div class="col-lg-8 main-chart">
+  <div class="col-lg-12 main-chart">
     <div class="row mt">
       <div class="col-md-8 col-sm-8 mb">
         <div class="grey-panel pn donut-chart">
           <div class="grey-header">
             <h5>Total de Lutas</h5>
           </div>
-          <div class="card-header-chartings">
+          <div class="card-header-chartings hidden-xs" #containerRef1>
+            <ngx-charts-gauge
+              [view]="[containerRef1.offsetWidth, 230]"
+              [scheme]="colorScheme"
+              [results]="totalLutas"
+              [legend]="true"
+              [legendTitle]="Legenda"
+              (select)="onSelect($event)"
+              >
+            </ngx-charts-gauge>
+          </div>
+
+          <div class="card-header-chartings visible-xs" #containerRef3>
             <ngx-charts-bar-vertical
-                  [view]="viewcol6"
+                  [view]="[containerRef3.offsetWidth, 200]"
                   [results]="totalLutas"
                   [showXAxisLabel]="false"
                   [showYAxisLabel]="false"
                   [legend]="true"
                   [legendTitle]="Legenda"
+                  [scheme]="colorScheme"
                   (select)="onSelect($event)">
             </ngx-charts-bar-vertical>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-4">
+        <br>
+        <br>
+        <br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa libero, sagittis at posuere vel, egestas eget felis. Mauris eu sem eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa libero, sagittis at posuere vel, egestas eget felis. Mauris eu sem eu
       </div>
     </div>
+    
     <div class="row mt">
-      <div class="col-md-6 col-sm-6 mb">
-        <div class="darkblue-panel pn">
-          <div class="darkblue-header">
+      <div class="col-md-4 col-sm-4">
+        <br>
+        <br>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa libero, sagittis at posuere vel, egestas eget felis. Mauris eu sem eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa libero, sagittis at posuere vel, egestas eget felis. Mauris eu sem eu
+      </div>
+
+      <div class="col-md-8 col-sm-8 mb">
+        <div class="grey-panel pn donut-chart">
+          <div class="grey-header">
             <h5>Total de Lutadores</h5>
           </div>
-          <canvas id="serverstatus02" height="120" width="120"></canvas>
-          <div class="row">
-            <div class="col-sm-12 col-xs-12">
-              <h2>21% são Brasileiros</h2>
-            </div>
+          <div class="card-header-chartings" #containerRef2>
+            <ngx-charts-bar-vertical
+                  [view]="[containerRef2.offsetWidth, 200]"
+                  [results]="totalLutadores"
+                  [showXAxisLabel]="false"
+                  [showYAxisLabel]="false"
+                  [legend]="true"
+                  [legendTitle]="Legenda"
+                  [scheme]="colorScheme"
+                  (select)="onSelect($event)">
+            </ngx-charts-bar-vertical>
           </div>
         </div>
       </div>
     </div>
+
     <div class="row mt">
-      <div class="col-md-6 col-sm-6 mb">
+      <div class="col-md-4 col-sm-4 mb">
         <div class="green-panel pn">
           <div class="green-header">
             <h5>Melhores Pontuações</h5>
@@ -66,7 +97,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6 mb">
+      <div class="col-md-4 col-sm-4 mb">
         <div class="green-panel pn">
           <div class="green-header">
             <h5>Melhores Pontuações</h5>
@@ -81,7 +112,7 @@
                 <h5>7. Douglas Lima</h5>
               </a>
               <a href="#">
-                <h5>8. Khabib Nurmagumedoc</h5>
+                <h5>8. Khabib Nurmagumedov</h5>
               </a>
               <a href="#">
                 <h5>9. Fedor Emelianenko</h5>
@@ -93,22 +124,15 @@
           </div>
         </div>
       </div>
-    </div>
-      
-      
-  </div>
-  <div class="col-lg-4 main-chart">
-    <div class="row mt">
-      <div class="col-md-12 col-sm-12 mb">
+      <div class="col-md-4 col-sm-4 mb">
         <div class="grey-panel pn donut-chart">
           <div class="grey-header">
-            <h5>O MMA Stats em um Tweet</h5>
+            <h5>Como Funciona o Sistema de Pontuação?</h5>
           </div>
           <br>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa libero, sagittis at posuere vel, egestas eget felis. Mauris eu sem eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa libero, sagittis at posuere vel, egestas eget felis. Mauris eu sem eu
           </p>
-
         </div>
       </div>
     </div>

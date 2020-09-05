@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/partials/header/header.component';
 import { SidebarComponent } from './components/partials/sidebar/sidebar.component';
 import { HomeComponent } from './components/home/home.component';
 import { RouterTestingModule } from '@angular/router/testing';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -21,6 +22,7 @@ describe('AppComponent', () => {
       ], imports: [
         HttpClientModule,
         RouterTestingModule,
+        NgxChartsModule,
         ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
       ],
        providers: [
