@@ -19,6 +19,7 @@ import { routes } from './app.routes';
 import { FormsModule } from '@angular/forms';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SaibaMaisComponent } from './components/saiba-mais/saiba-mais.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SidebarComponent,
     FooterComponent,
     HomeComponent,
+    SaibaMaisComponent,
   ],
   imports: [
     routes,
