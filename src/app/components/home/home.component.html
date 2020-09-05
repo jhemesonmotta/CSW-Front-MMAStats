@@ -1,15 +1,29 @@
 <div class="row">
   <div class="col-lg-8 main-chart">
     <div class="row mt">
-      <div class="col-md-6 col-sm-6 mb">
+      <div class="col-md-8 col-sm-8 mb">
         <div class="grey-panel pn donut-chart">
           <div class="grey-header">
             <h5>Total de Lutas</h5>
           </div>
-          <canvas id="serverstatus01" height="120" width="120"></canvas>
-          aqui botar % ko, to, submissão, empate e NC
+          <div class="card-header-chartings">
+            <ngx-charts-bar-vertical
+                  [view]="viewcol6"
+                  [results]="totalLutas"
+                  [showXAxisLabel]="false"
+                  [showYAxisLabel]="false"
+                  [legend]="true"
+                  [legendTitle]="Legenda"
+                  (select)="onSelect($event)">
+            </ngx-charts-bar-vertical>
+          </div>
         </div>
       </div>
+      <div class="col-md-4 col-sm-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa libero, sagittis at posuere vel, egestas eget felis. Mauris eu sem eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa libero, sagittis at posuere vel, egestas eget felis. Mauris eu sem eu
+      </div>
+    </div>
+    <div class="row mt">
       <div class="col-md-6 col-sm-6 mb">
         <div class="darkblue-panel pn">
           <div class="darkblue-header">
@@ -23,6 +37,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row mt">
       <div class="col-md-6 col-sm-6 mb">
         <div class="green-panel pn">
           <div class="green-header">
@@ -78,6 +94,8 @@
         </div>
       </div>
     </div>
+      
+      
   </div>
   <div class="col-lg-4 main-chart">
     <div class="row mt">

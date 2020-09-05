@@ -16,6 +16,9 @@ import { SidebarComponent } from './components/partials/sidebar/sidebar.componen
 import { FooterComponent } from './components/partials/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { routes } from './app.routes';
+import { FormsModule } from '@angular/forms';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { routes } from './app.routes';
   imports: [
     routes,
     BrowserModule,
+    FormsModule,
     HttpClientModule,
+    NgxChartsModule,
+    BrowserAnimationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
