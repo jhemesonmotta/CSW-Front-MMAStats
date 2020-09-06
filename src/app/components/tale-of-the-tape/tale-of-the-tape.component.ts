@@ -54,7 +54,7 @@ export class TaleOfTheTapeComponent implements OnInit {
     derrotas_ko: 4,
     derrotas_sub: 1,
     derrotas_dec: 2,
-    derrotas_outras: 1,
+    derrotas_outras: 0,
     empates_nc: 1},
 
     {id: 3,

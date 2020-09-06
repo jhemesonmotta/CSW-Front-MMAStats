@@ -67,6 +67,8 @@
           <br>
           <h5>{{selecionado1?.altura}} cm</h5>
           <br>
+          <h5>{{selecionado1?.peso}} KG</h5>
+          <br>
           <hr>
         </div>
       </div>
@@ -85,6 +87,8 @@
         <h5>Idade</h5>
         <br>
         <h5>Altura</h5>
+        <br>
+        <h5>Peso</h5>
         <br>
         <hr>
       </div>
@@ -106,21 +110,24 @@
           <br>
           <h5>{{selecionado2?.altura}} cm</h5>
           <br>
+          <h5>{{selecionado2?.peso}} KG</h5>
+          <br>
           <hr>
         </div>
       </div>
     </section>
+
     <section class="row" *ngIf="mostraTOTT()">
       <div class="col-md-12" #containerRef1>
 
         <ngx-charts-bar-horizontal-normalized
-          [view]="[containerRef1.offsetWidth, 250]"
+          [view]="[containerRef1.offsetWidth, 350]"
           [results]="dadosComparacao"
           [xAxis]="true"
           [yAxis]="true"
           [legend]="true"
           [showXAxisLabel]="false"
-          [showYAxisLabel]="false"
+          [showYAxisLabel]="true"
           [legendTitle]="'Legenda'"
           (select)="onSelect($event)">
         </ngx-charts-bar-horizontal-normalized>
