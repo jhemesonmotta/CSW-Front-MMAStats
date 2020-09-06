@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SaibaMaisComponent } from './components/saiba-mais/saiba-mais.component';
+import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { SaibaMaisComponent } from './components/saiba-mais/saiba-mais.component
     HttpClientModule,
     NgxChartsModule,
     BrowserAnimationsModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    DropDownsModule
   ],
   providers: [
     DataService

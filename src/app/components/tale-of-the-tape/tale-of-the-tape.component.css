@@ -1,0 +1,7 @@
+.cbFilter, .cbFilter .k-dropdown-wrap{
+    width: 100%!important;
+}
+
+kendo-combobox.w-100.k-widget.k-combobox.k-header.k-combobox-clearable {
+    width: 90%!important;
+}

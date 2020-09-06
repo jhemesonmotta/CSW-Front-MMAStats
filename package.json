@@ -24,10 +24,15 @@
     "@angular/pwa": "^0.8.9",
     "@angular/router": "^6.1.0",
     "@angular/service-worker": "^6.1.0",
+    "@progress/kendo-angular-dropdowns": "^4.3.1",
     "@swimlane/ngx-charts": "^12.0.1",
     "core-js": "^2.5.4",
     "rxjs": "~6.2.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "@progress/kendo-angular-l10n": "^2.0.0",
+    "@progress/kendo-angular-popup": "^3.0.0",
+    "@progress/kendo-angular-common": "^1.0.0",
+    "@progress/kendo-theme-default": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.8.0",

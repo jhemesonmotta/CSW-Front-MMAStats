@@ -1,8 +1,49 @@
 <div class="row">
   <div class="col-lg-12 main-chart">
+
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <h3>Tale of the Tape</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor lorem ligula, eu sodales ipsum rutrum accumsan. Etiam iaculis dignissim pellentesque. Suspendisse semper, ante non interdum rhoncus, ex lectus dapibus tortor, viverra pretium lectus ligula nec mauris. Phasellus a dolor sem. Ut volutpat aliquet accumsan. Proin fringilla vel felis ac congue. Donec a nunc maximus, fermentum velit id, sagittis turpis. Phasellus congue sem ac nibh hendrerit, congue vehicula orci rutrum. Proin vel odio lorem. Nunc dictum justo in purus iaculis, tempus aliquet metus pharetra. Sed vestibulum purus nibh, sed congue orci sagittis non.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5 col-sm-5">
+        <h4>Lutador 1</h4>
+        <kendo-combobox
+            class="w-100"
+            #combo
+            [data]="comboboxData"
+            [textField]="'nome'"
+            [valueField]="'id'"
+            [filterable]="true"
+            (filterChange)="handleFilter($event)"
+            [placeholder]="'Primeiro Lutador'"
+            [(ngModel)]="selecionado1"
+        >
+        </kendo-combobox>
+      </div>
+      <div class="col-md-1 col-sm-1">
+        <br>
+        <h3>vs.</h3>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <h4>Lutador 2</h4>
+        <kendo-combobox
+            class="w-100"
+            #combo
+            [data]="comboboxData"
+            [textField]="'nome'"
+            [valueField]="'id'"
+            [filterable]="true"
+            (filterChange)="handleFilter($event)"
+            [placeholder]="'Segundo Lutador'"
+            [(ngModel)]="selecionado2"
+        >
+        </kendo-combobox>
       </div>
     </div>
   </div>
