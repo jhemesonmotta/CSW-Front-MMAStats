@@ -48,49 +48,48 @@
     </div>
 
 
-    <div class="row">
-      <!-- <div class="row" *ngIf="mostraTOTT()"> -->
+    <section class="row" *ngIf="mostraTOTT()">
       <hr>
 
       <div class="col-md-5 col-sm-5 col-xs-5">
         <br>
-        <h4 class="text-right">Alistair Overeem</h4>
+        <h4 class="text-right">{{selecionado1?.nome}}</h4>
         
         <div class="text-right">
           <br>
-          <h5>Score</h5>
+          <h5>XXXXXX</h5>
           <br>
-          <h5>País</h5>
+          <h5>{{selecionado1?.pais}}</h5>
           <br>
-          <h5>Categoria</h5>
+          <h5>{{selecionado1?.categoria}}</h5>
           <br>
-          <h5>Equipe</h5>
+          <h5>{{selecionado1?.equipe}}</h5>
           <br>
-          <h5>Idade</h5>
+          <h5>{{selecionado1?.idade}}</h5>
           <br>
-          <h5>Altura</h5>
+          <h5>{{selecionado1?.altura}}</h5>
           <br>
-          <h5>Vitórias</h5>
+          <h5>{{selecionado1?.vitorias_ko + selecionado1?.vitorias_sub + selecionado1?.vitorias_dec + selecionado1?.vitorias_outras}}</h5>
           <br>
-          <h5>por KO/TKO</h5>
+          <h5>{{selecionado1?.vitorias_ko}}</h5>
           <br>
-          <h5>por Submissão</h5>
+          <h5>{{selecionado1?.vitorias_sub}}</h5>
           <br>
-          <h5>por Decisão</h5>
+          <h5>{{selecionado1?.vitorias_dec}}</h5>
           <br>
-          <h5>Outras</h5>
+          <h5>{{selecionado1?.vitorias_outras}}</h5>
           <br>
-          <h5>Derrotas</h5>
+          <h5>{{selecionado1?.derrotas_ko + selecionado1?.derrotas_sub + selecionado1?.derrotas_dec + selecionado1?.derrotas_outras}}</h5>
           <br>
-          <h5>por KO/TKO</h5>
+          <h5>{{selecionado1?.derrotas_ko}}</h5>
           <br>
-          <h5>por Submissão</h5>
+          <h5>{{selecionado1?.derrotas_sub}}</h5>
           <br>
-          <h5>por Decisão</h5>
+          <h5>{{selecionado1?.derrotas_dec}}</h5>
           <br>
-          <h5>Outras</h5>
+          <h5>{{selecionado1?.derrotas_outras}}</h5>
           <br>
-          <h5>Empates/NC</h5>
+          <h5>{{selecionado1?.empates_nc}}</h5>
         </div>
       </div>
 
@@ -134,45 +133,45 @@
 
       <div class="col-md-5 col-sm-5 col-xs-5">
         <br>
-        <h4 class="text-left">Fedor Emelianenko</h4>
+        <h4 class="text-left">{{selecionado2?.nome}}</h4>
         <div class="text-left">
           <br>
-          <h5>Score</h5>
+          <h5>XXXXXX</h5>
           <br>
-          <h5>País</h5>
+          <h5>{{selecionado2?.pais}}</h5>
           <br>
-          <h5>Categoria</h5>
+          <h5>{{selecionado2?.categoria}}</h5>
           <br>
-          <h5>Equipe</h5>
+          <h5>{{selecionado2?.equipe}}</h5>
           <br>
-          <h5>Idade</h5>
+          <h5>{{selecionado2?.idade}}</h5>
           <br>
-          <h5>Altura</h5>
+          <h5>{{selecionado2?.altura}}</h5>
           <br>
-          <h5>Vitórias</h5>
+          <h5>{{selecionado2?.vitorias_ko + selecionado2?.vitorias_sub + selecionado2?.vitorias_dec + selecionado2?.vitorias_outras}}</h5>
           <br>
-          <h5>por KO/TKO</h5>
+          <h5>{{selecionado2?.vitorias_ko}}</h5>
           <br>
-          <h5>por Submissão</h5>
+          <h5>{{selecionado2?.vitorias_sub}}</h5>
           <br>
-          <h5>por Decisão</h5>
+          <h5>{{selecionado2?.vitorias_dec}}</h5>
           <br>
-          <h5>Outras</h5>
+          <h5>{{selecionado2?.vitorias_outras}}</h5>
           <br>
-          <h5>Derrotas</h5>
+          <h5>{{selecionado2?.derrotas_ko + selecionado2?.derrotas_sub + selecionado2?.derrotas_dec + selecionado2?.derrotas_outras}}</h5>
           <br>
-          <h5>por KO/TKO</h5>
+          <h5>{{selecionado2?.derrotas_ko}}</h5>
           <br>
-          <h5>por Submissão</h5>
+          <h5>{{selecionado2?.derrotas_sub}}</h5>
           <br>
-          <h5>por Decisão</h5>
+          <h5>{{selecionado2?.derrotas_dec}}</h5>
           <br>
-          <h5>Outras</h5>
+          <h5>{{selecionado2?.derrotas_outras}}</h5>
           <br>
-          <h5>Empates/NC</h5>
+          <h5>{{selecionado2?.empates_nc}}</h5>
         </div>
       </div>
 
-    </div>
+    </section>
   </div>
 </div>
