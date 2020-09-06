@@ -53,7 +53,7 @@ export class TaleOfTheTapeComponent implements OnInit {
     vitorias_outras: 0,
     derrotas_ko: 4,
     derrotas_sub: 1,
-    derrotas_dec: 0,
+    derrotas_dec: 2,
     derrotas_outras: 1,
     empates_nc: 1},
 
@@ -123,9 +123,8 @@ export class TaleOfTheTapeComponent implements OnInit {
         }
       ]
     };
-
     let vitorias_ko: ModeloDadosComparacao = {
-      name: 'por Nocaute/TKO',
+      name: 'V. por KO/TKO',
       series: [
         {
           name: this.selecionado1.nome,
@@ -137,7 +136,7 @@ export class TaleOfTheTapeComponent implements OnInit {
       ]
     };
     let vitorias_sub: ModeloDadosComparacao = {
-      name: 'por Submissão',
+      name: 'V. por Submissão',
       series: [
         {
           name: this.selecionado1.nome,
@@ -149,7 +148,7 @@ export class TaleOfTheTapeComponent implements OnInit {
       ]
     };
     let vitorias_dec: ModeloDadosComparacao = {
-      name: 'por Decisão',
+      name: 'V. por Decisão',
       series: [
         {
           name: this.selecionado1.nome,
@@ -161,7 +160,7 @@ export class TaleOfTheTapeComponent implements OnInit {
       ]
     };
     let vitorias_outras: ModeloDadosComparacao = {
-      name: 'Outras',
+      name: 'Outras Vitórias',
       series: [
         {
           name: this.selecionado1.nome,
@@ -187,7 +186,7 @@ export class TaleOfTheTapeComponent implements OnInit {
       ]
     };
     let derrotas_ko: ModeloDadosComparacao = {
-      name: 'por Nocaute/TKO',
+      name: 'D. por KO/TKO',
       series: [
         {
           name: this.selecionado1.nome,
@@ -199,7 +198,7 @@ export class TaleOfTheTapeComponent implements OnInit {
       ]
     };
     let derrotas_sub: ModeloDadosComparacao = {
-      name: 'por Submissão',
+      name: 'D. por Submissão',
       series: [
         {
           name: this.selecionado1.nome,
@@ -211,7 +210,7 @@ export class TaleOfTheTapeComponent implements OnInit {
       ]
     };
     let derrotas_dec: ModeloDadosComparacao = {
-      name: 'por Decisão',
+      name: 'D. por Decisão',
       series: [
         {
           name: this.selecionado1.nome,
@@ -223,7 +222,7 @@ export class TaleOfTheTapeComponent implements OnInit {
       ]
     };
     let derrotas_outras: ModeloDadosComparacao = {
-      name: 'Outras',
+      name: 'Outras Derrotas',
       series: [
         {
           name: this.selecionado1.nome,
@@ -246,5 +245,19 @@ export class TaleOfTheTapeComponent implements OnInit {
         }
       ]
     };
+
+    this.dadosComparacao = [
+      vitorias,
+      vitorias_ko,
+      vitorias_sub,
+      vitorias_dec,
+      vitorias_outras,
+      derrotas,
+      derrotas_ko,
+      derrotas_sub,
+      derrotas_dec,
+      derrotas_outras,
+      empates_nc,
+    ];
   }
 }
