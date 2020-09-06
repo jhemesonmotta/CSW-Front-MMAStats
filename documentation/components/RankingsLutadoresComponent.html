@@ -237,10 +237,52 @@ export class RankingsLutadoresComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;p&gt;
-  rankings-lutadores works!
-&lt;/p&gt;
-</code></pre>
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;col-lg-12 main-chart&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-12 col-sm-12&quot;&gt;
+        &lt;h3&gt;Rankings de Lutadores&lt;/h3&gt;
+
+        &lt;div class&#x3D;&quot;content-panel&quot;&gt;
+          &lt;section id&#x3D;&quot;unseen&quot;&gt;
+            &lt;table class&#x3D;&quot;table table-bordered table-striped table-condensed&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Pos.&lt;/th&gt;
+                  &lt;th&gt;Lutador&lt;/th&gt;
+                  &lt;th class&#x3D;&quot;numeric&quot;&gt;Pontos Totais&lt;/th&gt;
+                  &lt;th class&#x3D;&quot;numeric&quot;&gt;Pontos do Momento&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;1&lt;/td&gt;
+                  &lt;td&gt;Jon Jones&lt;/td&gt;
+                  &lt;td class&#x3D;&quot;numeric&quot;&gt;123.01&lt;/td&gt;
+                  &lt;td class&#x3D;&quot;numeric&quot;&gt;20.395&lt;/td&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                  &lt;td&gt;2&lt;/td&gt;
+                  &lt;td&gt;Khabib Nurmagumedov&lt;/td&gt;
+                  &lt;td class&#x3D;&quot;numeric&quot;&gt;143.01&lt;/td&gt;
+                  &lt;td class&#x3D;&quot;numeric&quot;&gt;20.000&lt;/td&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                  &lt;td&gt;3&lt;/td&gt;
+                  &lt;td&gt;Stipe Miocic&lt;/td&gt;
+                  &lt;td class&#x3D;&quot;numeric&quot;&gt;100.01&lt;/td&gt;
+                  &lt;td class&#x3D;&quot;numeric&quot;&gt;19.152&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+          &lt;/section&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -275,8 +317,8 @@ export class RankingsLutadoresComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p>  rankings-lutadores works!</p></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'RankingsAcademiasComponent', 'selector': 'app-rankings-academias'},{'name': 'RankingsBaseComponent', 'selector': 'app-rankings-base'},{'name': 'RankingsLutadoresComponent', 'selector': 'app-rankings-lutadores'},{'name': 'RankingsNacoesComponent', 'selector': 'app-rankings-nacoes'},{'name': 'TaleOfTheTapeComponent', 'selector': 'app-tale-of-the-tape'}];
+        var COMPONENT_TEMPLATE = '<div><div class="row">  <div class="col-lg-12 main-chart">    <div class="row">      <div class="col-md-12 col-sm-12">        <h3>Rankings de Lutadores</h3>        <div class="content-panel">          <section id="unseen">            <table class="table table-bordered table-striped table-condensed">              <thead>                <tr>                  <th>Pos.</th>                  <th>Lutador</th>                  <th class="numeric">Pontos Totais</th>                  <th class="numeric">Pontos do Momento</th>                </tr>              </thead>              <tbody>                <tr>                  <td>1</td>                  <td>Jon Jones</td>                  <td class="numeric">123.01</td>                  <td class="numeric">20.395</td>                </tr>                <tr>                  <td>2</td>                  <td>Khabib Nurmagumedov</td>                  <td class="numeric">143.01</td>                  <td class="numeric">20.000</td>                </tr>                <tr>                  <td>3</td>                  <td>Stipe Miocic</td>                  <td class="numeric">100.01</td>                  <td class="numeric">19.152</td>                </tr>              </tbody>            </table>          </section>        </div>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContatoComponent', 'selector': 'app-contato'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'RankingsAcademiasComponent', 'selector': 'app-rankings-academias'},{'name': 'RankingsBaseComponent', 'selector': 'app-rankings-base'},{'name': 'RankingsLutadoresComponent', 'selector': 'app-rankings-lutadores'},{'name': 'RankingsNacoesComponent', 'selector': 'app-rankings-nacoes'},{'name': 'SaibaMaisComponent', 'selector': 'app-saiba-mais'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'TaleOfTheTapeComponent', 'selector': 'app-tale-of-the-tape'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'RankingsLutadoresComponent'};
 </script>

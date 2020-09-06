@@ -35,7 +35,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>RankingsBaseComponent</li>
+  <li>HeaderComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/components/rankings/rankings-base/rankings-base.component.ts</code>
+    <code>src/app/components/partials/header/header.component.ts</code>
 </p>
 
 
@@ -91,19 +91,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-rankings-base</code></td>
+                <td class="col-md-9"><code>app-header</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./rankings-base.component.css</code></td>
+                <td class="col-md-9"><code>./header.component.css</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./rankings-base.component.html</code></td>
+                <td class="col-md-9"><code>./header.component.html</code></td>
             </tr>
 
 
@@ -156,7 +156,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/components/rankings/rankings-base/rankings-base.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/components/partials/header/header.component.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -196,7 +196,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/components/rankings/rankings-base/rankings-base.component.ts:12</a></div>
+                            class="link-to-prism">src/app/components/partials/header/header.component.ts:12</a></div>
                 </td>
             </tr>
 
@@ -221,11 +221,11 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 
 @Component({
-  selector: &#x27;app-rankings-base&#x27;,
-  templateUrl: &#x27;./rankings-base.component.html&#x27;,
-  styleUrls: [&#x27;./rankings-base.component.css&#x27;]
+  selector: &#x27;app-header&#x27;,
+  templateUrl: &#x27;./header.component.html&#x27;,
+  styleUrls: [&#x27;./header.component.css&#x27;]
 })
-export class RankingsBaseComponent implements OnInit {
+export class HeaderComponent implements OnInit {
 
   constructor() { }
 
@@ -237,49 +237,43 @@ export class RankingsBaseComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot;&gt;
-  &lt;div class&#x3D;&quot;col-lg-12 main-chart&quot;&gt;
-    &lt;div class&#x3D;&quot;row&quot;&gt;
-      &lt;div class&#x3D;&quot;col-md-12 col-sm-12&quot;&gt;
-        &lt;h3&gt;Rankings&lt;/h3&gt;
-      &lt;/div&gt;
-
-      &lt;div class&#x3D;&quot;col-lg-4 col-md-4 col-sm-4 mb&quot;&gt;
-        &lt;div class&#x3D;&quot;product-panel-2 pn&quot;&gt;
-          &lt;img src&#x3D;&quot;/src/assets/img/icones/icone-1.png&quot; width&#x3D;&quot;100&quot; alt&#x3D;&quot;Rakings de Lutadores&quot; class&#x3D;&quot;mt&quot;&gt;
-          &lt;h5 class&#x3D;&quot;mt&quot;&gt;Rakings de Lutadores&lt;/h5&gt;
-          &lt;h6&gt;Acompanhe rankings peso-por-peso e por categoria dos melhores lutadores do mundo de acordo com as estatísticas.&lt;/h6&gt;
-          &lt;a class&#x3D;&quot;btn btn-small btn-theme04&quot; href&#x3D;&quot;/rankings/lutadores&quot;&gt;Ver +&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-      &lt;div class&#x3D;&quot;col-lg-4 col-md-4 col-sm-4 mb&quot;&gt;
-        &lt;div class&#x3D;&quot;product-panel-2 pn&quot;&gt;
-          &lt;img src&#x3D;&quot;/src/assets/img/icones/time.png&quot; width&#x3D;&quot;100&quot; alt&#x3D;&quot;Rakings de Equipes&quot; class&#x3D;&quot;mt&quot;&gt;
-          &lt;h5 class&#x3D;&quot;mt&quot;&gt;Rakings de Equipes&lt;/h5&gt;
-          &lt;h6&gt;Acompanhe o ranking das melhores equipes do mundo de acordo com as estatísticas dos seus lutadores.&lt;/h6&gt;
-          &lt;a class&#x3D;&quot;btn btn-small btn-theme04&quot; href&#x3D;&quot;/rankings/equipes&quot;&gt;Ver +&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-      &lt;div class&#x3D;&quot;col-lg-4 col-md-4 col-sm-4 mb&quot;&gt;
-        &lt;div class&#x3D;&quot;product-panel-2 pn&quot;&gt;
-          &lt;img src&#x3D;&quot;/src/assets/img/icones/world.png&quot; width&#x3D;&quot;100&quot; alt&#x3D;&quot;Rakings de Nações&quot; class&#x3D;&quot;mt&quot;&gt;
-          &lt;h5 class&#x3D;&quot;mt&quot;&gt;Rakings de Nações&lt;/h5&gt;
-          &lt;h6&gt;Acompanhe rankings dos países com maior força no mundo do MMA.&lt;/h6&gt;
-          &lt;a class&#x3D;&quot;btn btn-small btn-theme04&quot; href&#x3D;&quot;/rankings/nacoes&quot;&gt;Ver +&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;header class&#x3D;&quot;header black-bg&quot;&gt;
+  &lt;div class&#x3D;&quot;sidebar-toggle-box&quot;&gt;
+    &lt;div class&#x3D;&quot;fa fa-bars tooltips&quot; data-placement&#x3D;&quot;right&quot; data-original-title&#x3D;&quot;Toggle Navigation&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+  &lt;a href&#x3D;&quot;/&quot; class&#x3D;&quot;logo&quot;&gt;&lt;b&gt;MMA&lt;span&gt;Stats&lt;/span&gt;&lt;/b&gt;&lt;/a&gt;
+  &lt;div class&#x3D;&quot;nav notify-row float-right&quot; id&#x3D;&quot;top_menu&quot;&gt;
+    &lt;ul class&#x3D;&quot;nav top-menu&quot;&gt;
+      &lt;li class&#x3D;&quot;dropdown&quot;&gt;
+        &lt;a&gt;
+          &lt;a href&#x3D;&quot;#asd&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+
+      &lt;li class&#x3D;&quot;dropdown&quot;&gt;
+        &lt;a&gt;
+          &lt;a href&#x3D;&quot;#asd&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;i class&#x3D;&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+
+      &lt;li class&#x3D;&quot;dropdown&quot;&gt;
+        &lt;a&gt;
+          &lt;a href&#x3D;&quot;#&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
-                    <code>./rankings-base.component.css</code>
+                    <code>./header.component.css</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">.float-right{
+    float: right;
+}</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -307,10 +301,10 @@ export class RankingsBaseComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="row">  <div class="col-lg-12 main-chart">    <div class="row">      <div class="col-md-12 col-sm-12">        <h3>Rankings</h3>      </div>      <div class="col-lg-4 col-md-4 col-sm-4 mb">        <div class="product-panel-2 pn">          <img src="/src/assets/img/icones/icone-1.png" width="100" alt="Rakings de Lutadores" class="mt">          <h5 class="mt">Rakings de Lutadores</h5>          <h6>Acompanhe rankings peso-por-peso e por categoria dos melhores lutadores do mundo de acordo com as estatísticas.</h6>          <a class="btn btn-small btn-theme04" href="/rankings/lutadores">Ver +</a>        </div>      </div>      <div class="col-lg-4 col-md-4 col-sm-4 mb">        <div class="product-panel-2 pn">          <img src="/src/assets/img/icones/time.png" width="100" alt="Rakings de Equipes" class="mt">          <h5 class="mt">Rakings de Equipes</h5>          <h6>Acompanhe o ranking das melhores equipes do mundo de acordo com as estatísticas dos seus lutadores.</h6>          <a class="btn btn-small btn-theme04" href="/rankings/equipes">Ver +</a>        </div>      </div>      <div class="col-lg-4 col-md-4 col-sm-4 mb">        <div class="product-panel-2 pn">          <img src="/src/assets/img/icones/world.png" width="100" alt="Rakings de Nações" class="mt">          <h5 class="mt">Rakings de Nações</h5>          <h6>Acompanhe rankings dos países com maior força no mundo do MMA.</h6>          <a class="btn btn-small btn-theme04" href="/rankings/nacoes">Ver +</a>        </div>      </div>    </div>  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><header class="header black-bg">  <div class="sidebar-toggle-box">    <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>  </div>  <a href="/" class="logo"><b>MMA<span>Stats</span></b></a>  <div class="nav notify-row float-right" id="top_menu">    <ul class="nav top-menu">      <li class="dropdown">        <a>          <a href="#asd" target="_blank"><i class="fa fa-twitter"></i></a>        </a>      </li>      <li class="dropdown">        <a>          <a href="#asd" target="_blank"><i class="fa fa-facebook"></i></a>        </a>      </li>      <li class="dropdown">        <a>          <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>        </a>      </li>    </ul>  </div></header></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContatoComponent', 'selector': 'app-contato'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'RankingsAcademiasComponent', 'selector': 'app-rankings-academias'},{'name': 'RankingsBaseComponent', 'selector': 'app-rankings-base'},{'name': 'RankingsLutadoresComponent', 'selector': 'app-rankings-lutadores'},{'name': 'RankingsNacoesComponent', 'selector': 'app-rankings-nacoes'},{'name': 'SaibaMaisComponent', 'selector': 'app-saiba-mais'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'TaleOfTheTapeComponent', 'selector': 'app-tale-of-the-tape'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'RankingsBaseComponent'};
+    var ACTUAL_COMPONENT = {'name': 'HeaderComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -345,7 +339,7 @@ export class RankingsBaseComponent implements OnInit {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'RankingsBaseComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'HeaderComponent.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
