@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Lutador } from 'src/app/model/lutador';
 import { ComboBoxComponent } from '@progress/kendo-angular-dropdowns';
+import { ModeloDadosComparacao } from 'src/app/model/modeloDadosComparacao';
 
 @Component({
   selector: 'app-tale-of-the-tape',
@@ -77,6 +78,9 @@ export class TaleOfTheTapeComponent implements OnInit {
     empates_nc: 1}
   ];
 
+
+  dadosComparacao: ModeloDadosComparacao[] = [];
+
   constructor() {
     this.comboboxData = this.source.slice();
   }
@@ -91,10 +95,156 @@ export class TaleOfTheTapeComponent implements OnInit {
     }
   }
 
+  onSelect(event) {
+    console.log(event);
+  }
+
   mostraTOTT() {
     if (this.selecionado1 && this.selecionado2 && this.selecionado1.id && this.selecionado2.id) {
+      this.preencheGraficos();
       return true;
     }
     return false;
+  }
+
+  preencheGraficos() {
+
+    let vitorias: ModeloDadosComparacao = {
+      name: 'Vitórias',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.vitorias_ko + this.selecionado1.vitorias_sub +
+                  this.selecionado1.vitorias_dec + this.selecionado1.vitorias_outras,
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.vitorias_ko + this.selecionado2.vitorias_sub +
+                  this.selecionado2.vitorias_dec + this.selecionado2.vitorias_outras,
+        }
+      ]
+    };
+
+    let vitorias_ko: ModeloDadosComparacao = {
+      name: 'por Nocaute/TKO',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.vitorias_ko,
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.vitorias_ko,
+        }
+      ]
+    };
+    let vitorias_sub: ModeloDadosComparacao = {
+      name: 'por Submissão',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.vitorias_sub,
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.vitorias_sub,
+        }
+      ]
+    };
+    let vitorias_dec: ModeloDadosComparacao = {
+      name: 'por Decisão',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.vitorias_dec,
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.vitorias_dec,
+        }
+      ]
+    };
+    let vitorias_outras: ModeloDadosComparacao = {
+      name: 'Outras',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.vitorias_outras,
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.vitorias_outras,
+        }
+      ]
+    };
+    let derrotas: ModeloDadosComparacao = {
+      name: 'Derrotas',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.derrotas_ko + this.selecionado1.derrotas_sub +
+                  this.selecionado1.derrotas_dec + this.selecionado1.derrotas_outras
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.derrotas_ko + this.selecionado2.derrotas_sub +
+                  this.selecionado2.derrotas_dec + this.selecionado2.derrotas_outras
+        }
+      ]
+    };
+    let derrotas_ko: ModeloDadosComparacao = {
+      name: 'por Nocaute/TKO',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.derrotas_ko,
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.derrotas_ko,
+        }
+      ]
+    };
+    let derrotas_sub: ModeloDadosComparacao = {
+      name: 'por Submissão',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.derrotas_sub,
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.derrotas_sub,
+        }
+      ]
+    };
+    let derrotas_dec: ModeloDadosComparacao = {
+      name: 'por Decisão',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.derrotas_dec,
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.derrotas_dec,
+        }
+      ]
+    };
+    let derrotas_outras: ModeloDadosComparacao = {
+      name: 'Outras',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.derrotas_outras,
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.derrotas_outras,
+        }
+      ]
+    };
+    let empates_nc: ModeloDadosComparacao = {
+      name: 'Empates/NC',
+      series: [
+        {
+          name: this.selecionado1.nome,
+          value: this.selecionado1.empates_nc,
+        }, {
+          name: this.selecionado2.nome,
+          value: this.selecionado2.empates_nc,
+        }
+      ]
+    };
   }
 }

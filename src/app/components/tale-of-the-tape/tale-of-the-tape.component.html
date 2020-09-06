@@ -50,11 +50,9 @@
 
     <section class="row" *ngIf="mostraTOTT()">
       <hr>
-
       <div class="col-md-5 col-sm-5 col-xs-5">
         <br>
         <h4 class="text-right">{{selecionado1?.nome}}</h4>
-        
         <div class="text-right">
           <br>
           <h5>XXXXXX</h5>
@@ -67,29 +65,9 @@
           <br>
           <h5>{{selecionado1?.idade}}</h5>
           <br>
-          <h5>{{selecionado1?.altura}}</h5>
+          <h5>{{selecionado1?.altura}} cm</h5>
           <br>
-          <h5>{{selecionado1?.vitorias_ko + selecionado1?.vitorias_sub + selecionado1?.vitorias_dec + selecionado1?.vitorias_outras}}</h5>
-          <br>
-          <h5>{{selecionado1?.vitorias_ko}}</h5>
-          <br>
-          <h5>{{selecionado1?.vitorias_sub}}</h5>
-          <br>
-          <h5>{{selecionado1?.vitorias_dec}}</h5>
-          <br>
-          <h5>{{selecionado1?.vitorias_outras}}</h5>
-          <br>
-          <h5>{{selecionado1?.derrotas_ko + selecionado1?.derrotas_sub + selecionado1?.derrotas_dec + selecionado1?.derrotas_outras}}</h5>
-          <br>
-          <h5>{{selecionado1?.derrotas_ko}}</h5>
-          <br>
-          <h5>{{selecionado1?.derrotas_sub}}</h5>
-          <br>
-          <h5>{{selecionado1?.derrotas_dec}}</h5>
-          <br>
-          <h5>{{selecionado1?.derrotas_outras}}</h5>
-          <br>
-          <h5>{{selecionado1?.empates_nc}}</h5>
+          <hr>
         </div>
       </div>
 
@@ -108,27 +86,7 @@
         <br>
         <h5>Altura</h5>
         <br>
-        <h5>Vitórias</h5>
-        <br>
-        <h5>por KO/TKO</h5>
-        <br>
-        <h5>por Submissão</h5>
-        <br>
-        <h5>por Decisão</h5>
-        <br>
-        <h5>Outras</h5>
-        <br>
-        <h5>Derrotas</h5>
-        <br>
-        <h5>por KO/TKO</h5>
-        <br>
-        <h5>por Submissão</h5>
-        <br>
-        <h5>por Decisão</h5>
-        <br>
-        <h5>Outras</h5>
-        <br>
-        <h5>Empates/NC</h5>
+        <hr>
       </div>
 
       <div class="col-md-5 col-sm-5 col-xs-5">
@@ -146,32 +104,28 @@
           <br>
           <h5>{{selecionado2?.idade}}</h5>
           <br>
-          <h5>{{selecionado2?.altura}}</h5>
+          <h5>{{selecionado2?.altura}} cm</h5>
           <br>
-          <h5>{{selecionado2?.vitorias_ko + selecionado2?.vitorias_sub + selecionado2?.vitorias_dec + selecionado2?.vitorias_outras}}</h5>
-          <br>
-          <h5>{{selecionado2?.vitorias_ko}}</h5>
-          <br>
-          <h5>{{selecionado2?.vitorias_sub}}</h5>
-          <br>
-          <h5>{{selecionado2?.vitorias_dec}}</h5>
-          <br>
-          <h5>{{selecionado2?.vitorias_outras}}</h5>
-          <br>
-          <h5>{{selecionado2?.derrotas_ko + selecionado2?.derrotas_sub + selecionado2?.derrotas_dec + selecionado2?.derrotas_outras}}</h5>
-          <br>
-          <h5>{{selecionado2?.derrotas_ko}}</h5>
-          <br>
-          <h5>{{selecionado2?.derrotas_sub}}</h5>
-          <br>
-          <h5>{{selecionado2?.derrotas_dec}}</h5>
-          <br>
-          <h5>{{selecionado2?.derrotas_outras}}</h5>
-          <br>
-          <h5>{{selecionado2?.empates_nc}}</h5>
+          <hr>
         </div>
       </div>
+    </section>
+    <section class="row" *ngIf="mostraTOTT()">
+      <div class="col-md-12" #containerRef1>
 
+        <ngx-charts-bar-horizontal-normalized
+          [view]="[containerRef1.offsetWidth, 250]"
+          [results]="dadosComparacao"
+          [xAxis]="true"
+          [yAxis]="true"
+          [legend]="true"
+          [showXAxisLabel]="false"
+          [showYAxisLabel]="false"
+          [legendTitle]="'Legenda'"
+          (select)="onSelect($event)">
+        </ngx-charts-bar-horizontal-normalized>
+
+      </div>
     </section>
   </div>
 </div>
