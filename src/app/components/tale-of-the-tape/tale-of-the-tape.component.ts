@@ -18,7 +18,7 @@ export class TaleOfTheTapeComponent implements OnInit {
   public source: Array<Lutador> = [
     {id: 1,
     nome: 'Jon Jones',
-    foto: '',
+    foto: 'https://www.sherdog.com/image_crop/200/300/_images/fighter/20140714113923_1MG_7562.JPG',
     apelido: 'Bones',
     pais: 'United States',
     idade: 34,
@@ -38,7 +38,7 @@ export class TaleOfTheTapeComponent implements OnInit {
 
     {id: 2,
     nome: 'Ryan Bader',
-    foto: '',
+    foto: 'https://www.sherdog.com/image_crop/200/300/_images/fighter/20170627034721_1DX_1121.JPG',
     apelido: 'Darth',
     pais: 'United States',
     idade: 38,
@@ -58,7 +58,7 @@ export class TaleOfTheTapeComponent implements OnInit {
 
     {id: 3,
     nome: 'Amanda Nunes',
-    foto: '',
+    foto: 'https://www.sherdog.com/image_crop/200/300/_images/fighter/20160929035240_nunes.JPG',
     apelido: 'Leoa',
     pais: 'Brazil',
     idade: 30,
@@ -89,5 +89,12 @@ export class TaleOfTheTapeComponent implements OnInit {
     } else {
         this.combo.toggle(false);
     }
+  }
+
+  mostraTOTT() {
+    if (this.selecionado1 && this.selecionado2 && this.selecionado1.id && this.selecionado2.id) {
+      return true;
+    }
+    return false;
   }
 }
