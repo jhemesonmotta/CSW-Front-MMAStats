@@ -26,7 +26,7 @@ export const ROUTES: Routes = [
         component: RankingsLutadoresComponent
     },
     {
-        path: 'rankings/academias',
+        path: 'rankings/equipes',
         component: RankingsAcademiasComponent
     },
     {
