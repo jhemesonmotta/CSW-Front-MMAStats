@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import { Lutador } from 'src/app/model/lutador';
 import { ComboBoxComponent } from '@progress/kendo-angular-dropdowns';
 import { ModeloDadosComparacao } from 'src/app/model/modeloDadosComparacao';
@@ -10,7 +10,7 @@ import { LutadoresService } from 'src/app/services/lutadores/lutadores.service';
   styleUrls: ['./tale-of-the-tape.component.css']
 })
 export class TaleOfTheTapeComponent implements OnInit {
-  @ViewChild('combo') public combo: ComboBoxComponent;
+  @ViewChild('combo', {static: true}) public combo: ComboBoxComponent;
 
   listaLutadores: Array<Lutador> = [];
   public selecionado1: Lutador;

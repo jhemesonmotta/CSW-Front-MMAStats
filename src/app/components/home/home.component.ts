@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import axios from 'axios';
+import * as NodeParser from 'node-html-parser';
 
 @Component({
   selector: 'app-home',
@@ -51,11 +53,28 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.scrape();
   }
 
   onSelect(event) {
     console.log('event');
     console.log(event);
+  }
+
+  private scrape() {
+    console.log('scrape()');
+
+    const AxiosInstance = axios.create();
+    const url = 'https://github.com/MisterBooo/LeetCodeAnimation/graphs/contributors';
+
+    AxiosInstance.get(url).then((response) => {
+        const txtHtml = response.data;
+        const parsedHtml = NodeParser.parse(txtHtml);
+
+        console.log('parsedHtml');
+        console.log(parsedHtml.querySelector('.contrib-person'));
+
+    }).catch(console.error); // Error handling
   }
 
 }
