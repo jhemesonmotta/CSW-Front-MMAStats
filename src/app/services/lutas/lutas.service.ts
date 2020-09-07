@@ -10,7 +10,7 @@ export class LutaService {
   }
 
   buscarLutas(): Observable<Array<any>> {
-    return this.http.get(`${BACKEND_API}/lutas`) as Observable<Array<any>>;
+    return this.http.get(`${BACKEND_API}lutas`) as Observable<Array<any>>;
   }
 
 }

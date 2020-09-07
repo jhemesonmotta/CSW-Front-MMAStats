@@ -11,7 +11,7 @@ export class OrganizacaoService {
   }
 
   buscarOrganizacoes(): Observable<Array<Organizacao>> {
-    return this.http.get(`${BACKEND_API}/organizacoes`) as Observable<Array<Organizacao>>;
+    return this.http.get(`${BACKEND_API}organizacoes`) as Observable<Array<Organizacao>>;
   }
 
 }

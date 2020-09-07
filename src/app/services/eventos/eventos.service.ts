@@ -11,7 +11,7 @@ export class EventoService {
   }
 
   buscarEventos(): Observable<Array<Evento>> {
-    return this.http.get(`${BACKEND_API}/eventos`) as Observable<Array<Evento>>;
+    return this.http.get(`${BACKEND_API}eventos`) as Observable<Array<Evento>>;
   }
 
 }

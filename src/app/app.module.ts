@@ -21,6 +21,10 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SaibaMaisComponent } from './components/saiba-mais/saiba-mais.component';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
+import { EventoService } from './services/eventos/eventos.service';
+import { LutadoresService } from './services/lutadores/lutadores.service';
+import { LutaService } from './services/lutas/lutas.service';
+import { OrganizacaoService } from './services/organizacoes/organizacoes.service';
 
 
 @NgModule({
@@ -49,7 +53,11 @@ import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
     DropDownsModule
   ],
   providers: [
-    DataService
+    DataService,
+    EventoService,
+    LutadoresService,
+    LutaService,
+    OrganizacaoService
   ],
   bootstrap: [AppComponent]
 })

@@ -11,7 +11,7 @@ export class LutadoresService {
   }
 
   buscarLutadores(): Observable<Array<Lutador>> {
-    return this.http.get(`${BACKEND_API}/lutadores`) as Observable<Array<Lutador>>;
+    return this.http.get(`${BACKEND_API}lutadores`) as Observable<Array<Lutador>>;
   }
 
 }
