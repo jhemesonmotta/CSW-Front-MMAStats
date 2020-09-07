@@ -76,7 +76,7 @@ export class TaleOfTheTapeComponent implements OnInit {
       ]
     };
     const v_submissao: ModeloDadosComparacao = {
-      name: 'V. por Submissão',
+      name: 'V. por Finalização',
       series: [
         {
           name: this.selecionado1.nome,
@@ -126,7 +126,7 @@ export class TaleOfTheTapeComponent implements OnInit {
       ]
     };
     const d_submissao: ModeloDadosComparacao = {
-      name: 'D. por Submissão',
+      name: 'D. por Finalização',
       series: [
         {
           name: this.selecionado1.nome,
