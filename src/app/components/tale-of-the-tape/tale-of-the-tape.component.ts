@@ -19,7 +19,7 @@ export class TaleOfTheTapeComponent implements OnInit {
   public source: Array<Lutador> = [
     {id: 1,
     nome: 'Jon Jones',
-    foto: 'https://www.sherdog.com/image_crop/200/300/_images/fighter/20140714113923_1MG_7562.JPG',
+    url_foto: 'https://www.sherdog.com/image_crop/200/300/_images/fighter/20140714113923_1MG_7562.JPG',
     apelido: 'Bones',
     pais: 'United States',
     idade: 34,
@@ -27,19 +27,17 @@ export class TaleOfTheTapeComponent implements OnInit {
     peso: 93.5,
     categoria: 'Meio Pesado',
     equipe: 'ELEVATION FIGHT TEAM',
-    vitorias_ko: 10,
-    vitorias_sub: 5,
-    vitorias_dec: 12,
-    vitorias_outras: 0,
-    derrotas_ko: 0,
-    derrotas_sub: 0,
-    derrotas_dec: 0,
-    derrotas_outras: 1,
-    empates_nc: 1},
+    v_kotko: 10,
+    v_submissao: 5,
+    v_decisao: 12,
+    d_ko_tko: 0,
+    d_submissao: 0,
+    d_decisao: 0,
+    empates: 1},
 
     {id: 2,
     nome: 'Ryan Bader',
-    foto: 'https://www.sherdog.com/image_crop/200/300/_images/fighter/20170627034721_1DX_1121.JPG',
+    url_foto: 'https://www.sherdog.com/image_crop/200/300/_images/fighter/20170627034721_1DX_1121.JPG',
     apelido: 'Darth',
     pais: 'United States',
     idade: 38,
@@ -47,19 +45,17 @@ export class TaleOfTheTapeComponent implements OnInit {
     peso: 93.5,
     categoria: 'Meio Pesado',
     equipe: 'AMERICAN TOP TEAM',
-    vitorias_ko: 15,
-    vitorias_sub: 1,
-    vitorias_dec: 7,
-    vitorias_outras: 0,
-    derrotas_ko: 4,
-    derrotas_sub: 1,
-    derrotas_dec: 2,
-    derrotas_outras: 0,
-    empates_nc: 1},
+    v_kotko: 15,
+    v_submissao: 1,
+    v_decisao: 7,
+    d_ko_tko: 4,
+    d_submissao: 1,
+    d_decisao: 2,
+    empates: 1},
 
     {id: 3,
     nome: 'Amanda Nunes',
-    foto: 'https://www.sherdog.com/image_crop/200/300/_images/fighter/20160929035240_nunes.JPG',
+    url_foto: 'https://www.sherdog.com/image_crop/200/300/_images/fighter/20160929035240_nunes.JPG',
     apelido: 'Leoa',
     pais: 'Brazil',
     idade: 30,
@@ -67,15 +63,13 @@ export class TaleOfTheTapeComponent implements OnInit {
     peso: 63.5,
     categoria: 'Galo',
     equipe: 'Teste',
-    vitorias_ko: 10,
-    vitorias_sub: 5,
-    vitorias_dec: 12,
-    vitorias_outras: 0,
-    derrotas_ko: 0,
-    derrotas_sub: 0,
-    derrotas_dec: 0,
-    derrotas_outras: 1,
-    empates_nc: 1}
+    v_kotko: 10,
+    v_submissao: 5,
+    v_decisao: 12,
+    d_ko_tko: 0,
+    d_submissao: 0,
+    d_decisao: 0,
+    empates: 1}
   ];
 
 
@@ -109,155 +103,129 @@ export class TaleOfTheTapeComponent implements OnInit {
 
   preencheGraficos() {
 
-    let vitorias: ModeloDadosComparacao = {
+    const vitorias: ModeloDadosComparacao = {
       name: 'Vitórias',
       series: [
         {
           name: this.selecionado1.nome,
-          value: this.selecionado1.vitorias_ko + this.selecionado1.vitorias_sub +
-                  this.selecionado1.vitorias_dec + this.selecionado1.vitorias_outras,
+          value: this.selecionado1.v_kotko + this.selecionado1.v_submissao +
+                  this.selecionado1.v_decisao,
         }, {
           name: this.selecionado2.nome,
-          value: this.selecionado2.vitorias_ko + this.selecionado2.vitorias_sub +
-                  this.selecionado2.vitorias_dec + this.selecionado2.vitorias_outras,
+          value: this.selecionado2.v_kotko + this.selecionado2.v_submissao +
+                  this.selecionado2.v_decisao,
         }
       ]
     };
-    let vitorias_ko: ModeloDadosComparacao = {
+    const v_kotko: ModeloDadosComparacao = {
       name: 'V. por KO/TKO',
       series: [
         {
           name: this.selecionado1.nome,
-          value: this.selecionado1.vitorias_ko,
+          value: this.selecionado1.v_kotko,
         }, {
           name: this.selecionado2.nome,
-          value: this.selecionado2.vitorias_ko,
+          value: this.selecionado2.v_kotko,
         }
       ]
     };
-    let vitorias_sub: ModeloDadosComparacao = {
+    const v_submissao: ModeloDadosComparacao = {
       name: 'V. por Submissão',
       series: [
         {
           name: this.selecionado1.nome,
-          value: this.selecionado1.vitorias_sub,
+          value: this.selecionado1.v_submissao,
         }, {
           name: this.selecionado2.nome,
-          value: this.selecionado2.vitorias_sub,
+          value: this.selecionado2.v_submissao,
         }
       ]
     };
-    let vitorias_dec: ModeloDadosComparacao = {
+    const v_decisao: ModeloDadosComparacao = {
       name: 'V. por Decisão',
       series: [
         {
           name: this.selecionado1.nome,
-          value: this.selecionado1.vitorias_dec,
+          value: this.selecionado1.v_decisao,
         }, {
           name: this.selecionado2.nome,
-          value: this.selecionado2.vitorias_dec,
+          value: this.selecionado2.v_decisao,
         }
       ]
     };
-    let vitorias_outras: ModeloDadosComparacao = {
-      name: 'Outras Vitórias',
-      series: [
-        {
-          name: this.selecionado1.nome,
-          value: this.selecionado1.vitorias_outras,
-        }, {
-          name: this.selecionado2.nome,
-          value: this.selecionado2.vitorias_outras,
-        }
-      ]
-    };
-    let derrotas: ModeloDadosComparacao = {
+    const derrotas: ModeloDadosComparacao = {
       name: 'Derrotas',
       series: [
         {
           name: this.selecionado1.nome,
-          value: this.selecionado1.derrotas_ko + this.selecionado1.derrotas_sub +
-                  this.selecionado1.derrotas_dec + this.selecionado1.derrotas_outras
+          value: this.selecionado1.d_ko_tko + this.selecionado1.d_submissao +
+                  this.selecionado1.d_decisao
         }, {
           name: this.selecionado2.nome,
-          value: this.selecionado2.derrotas_ko + this.selecionado2.derrotas_sub +
-                  this.selecionado2.derrotas_dec + this.selecionado2.derrotas_outras
+          value: this.selecionado2.d_ko_tko + this.selecionado2.d_submissao +
+                  this.selecionado2.d_decisao
         }
       ]
     };
-    let derrotas_ko: ModeloDadosComparacao = {
+    const d_ko_tko: ModeloDadosComparacao = {
       name: 'D. por KO/TKO',
       series: [
         {
           name: this.selecionado1.nome,
-          value: this.selecionado1.derrotas_ko,
+          value: this.selecionado1.d_ko_tko,
         }, {
           name: this.selecionado2.nome,
-          value: this.selecionado2.derrotas_ko,
+          value: this.selecionado2.d_ko_tko,
         }
       ]
     };
-    let derrotas_sub: ModeloDadosComparacao = {
+    const d_submissao: ModeloDadosComparacao = {
       name: 'D. por Submissão',
       series: [
         {
           name: this.selecionado1.nome,
-          value: this.selecionado1.derrotas_sub,
+          value: this.selecionado1.d_submissao,
         }, {
           name: this.selecionado2.nome,
-          value: this.selecionado2.derrotas_sub,
+          value: this.selecionado2.d_submissao,
         }
       ]
     };
-    let derrotas_dec: ModeloDadosComparacao = {
+    const d_decisao: ModeloDadosComparacao = {
       name: 'D. por Decisão',
       series: [
         {
           name: this.selecionado1.nome,
-          value: this.selecionado1.derrotas_dec,
+          value: this.selecionado1.d_decisao,
         }, {
           name: this.selecionado2.nome,
-          value: this.selecionado2.derrotas_dec,
+          value: this.selecionado2.d_decisao,
         }
       ]
     };
-    let derrotas_outras: ModeloDadosComparacao = {
-      name: 'Outras Derrotas',
-      series: [
-        {
-          name: this.selecionado1.nome,
-          value: this.selecionado1.derrotas_outras,
-        }, {
-          name: this.selecionado2.nome,
-          value: this.selecionado2.derrotas_outras,
-        }
-      ]
-    };
-    let empates_nc: ModeloDadosComparacao = {
+    const empates: ModeloDadosComparacao = {
       name: 'Empates/NC',
       series: [
         {
           name: this.selecionado1.nome,
-          value: this.selecionado1.empates_nc,
+          value: this.selecionado1.empates,
         }, {
           name: this.selecionado2.nome,
-          value: this.selecionado2.empates_nc,
+          value: this.selecionado2.empates,
         }
       ]
     };
 
     this.dadosComparacao = [
       vitorias,
-      vitorias_ko,
-      vitorias_sub,
-      vitorias_dec,
-      vitorias_outras,
+      v_kotko,
+      v_submissao,
+      v_decisao,
       derrotas,
-      derrotas_ko,
-      derrotas_sub,
-      derrotas_dec,
-      derrotas_outras,
-      empates_nc,
+      d_ko_tko,
+      d_submissao,
+      d_decisao,
+      empates,
     ];
   }
 }
