@@ -9,7 +9,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.c11614655ab1ab537b59.js",
+        "/main.233fb5a26515a5127bb0.js",
         "/polyfills.e376cc4a770bfa13f600.js",
         "/runtime.06daa30a2963fa413676.js",
         "/styles.3ade56297548874555ac.css"
@@ -227,7 +227,7 @@
   ],
   "hashTable": {
     "/assets/css/style-responsive.css": "5b573111474f7d5bd5d4f187f85ffbe61a798d2a",
-    "/assets/css/style.css": "faabd0784b643b9310f4862b066c4b755b2c236d",
+    "/assets/css/style.css": "35aa03e57523c98e30939602b1fb818fa3ddbe62",
     "/assets/css/table-responsive.css": "7c73e89c17036f215f4c2766a7ec1b98cc68183e",
     "/assets/css/to-do.css": "a5db766e5371ad3586f8bfe43606a14f49beba0e",
     "/assets/css/zabuto_calendar.css": "b251ca84c07547ffd22337740790607d7371354d",
@@ -414,8 +414,8 @@
     "/assets/vendors/lib/xchart/xcharts.min.js": "8d488e234e9dab33471589ee0f9a772d1df54724",
     "/assets/vendors/lib/zabuto_calendar.js": "6ea1cc20fc878c0bd4881bc0dfd6fe69230da721",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "1922506d56901d7275b7fb07866640e89e77197e",
-    "/main.c11614655ab1ab537b59.js": "80d0c75ee56f3e559209d7b95d9ca49c43bd96c0",
+    "/index.html": "9b59e651f3fdc8d3a9a356bbe473fa1a51e12afd",
+    "/main.233fb5a26515a5127bb0.js": "4ddf482cbf01484866762b35fec7bdfad92a79b2",
     "/polyfills.e376cc4a770bfa13f600.js": "e986a8b31f4b9d0472e01ac3b1702e42c53dc377",
     "/runtime.06daa30a2963fa413676.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "/styles.3ade56297548874555ac.css": "235fdd4130a4df78f2d4bb2f005f21d273710d9f"
