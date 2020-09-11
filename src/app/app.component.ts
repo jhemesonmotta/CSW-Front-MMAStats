@@ -8,9 +8,8 @@ import { DataService } from './services/norris/data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title: any;
 
-  constructor(updates: SwUpdate, private data: DataService) {
+  constructor(updates: SwUpdate) {
     updates.available.subscribe(event => {
       // recarrega a página se houverem updates
       updates.activateUpdate().then(() => document.location.reload());
@@ -18,10 +17,5 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.data.gimmeJokes().subscribe((response) => {
-      this.title = response.value;
-      console.log('this.title');
-      console.log(this.title);
-    });
   }
 }

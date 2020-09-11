@@ -25,14 +25,44 @@
   ],
   "dataGroups": [
     {
-      "name": "jokes-api",
-      "urls": ["https://api.chucknorris.io/jokes/random"],
+      "name": "mma-api-lutadores",
+      "urls": ["https://mma-stats.herokuapp.com/v1/lutadores"],
       "cacheConfig": {
         "strategy": "freshness",
-        "maxSize": 20,
-        "maxAge": "24h",
-        "timeout": "5s"
+        "maxSize": 100,
+        "maxAge": "48h",
+        "timeout": "10s"
       }
-    }
+    },
+    {
+      "name": "mma-api-lutas",
+      "urls": ["https://mma-stats.herokuapp.com/v1/lutas"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "48h",
+        "timeout": "10s"
+      }
+    },
+    {
+      "name": "mma-api-organizacoes",
+      "urls": ["https://mma-stats.herokuapp.com/v1/organizacoes"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "48h",
+        "timeout": "10s"
+      }
+    },
+    {
+      "name": "mma-api-eventos",
+      "urls": ["https://mma-stats.herokuapp.com/v1/eventos"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "48h",
+        "timeout": "10s"
+      }
+    },
   ]
 }
