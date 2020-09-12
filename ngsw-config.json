@@ -26,43 +26,18 @@
   "dataGroups": [
     {
       "name": "mma-api-lutadores",
-      "urls": ["https://mma-stats.herokuapp.com/v1/lutadores"],
+      "urls": [
+        "https://mma-stats.herokuapp.com/v1/lutadores",
+        "https://mma-stats.herokuapp.com/v1/lutas",
+        "https://mma-stats.herokuapp.com/v1/organizacoes",
+        "https://mma-stats.herokuapp.com/v1/eventos"
+      ],
       "cacheConfig": {
         "strategy": "freshness",
         "maxSize": 100,
         "maxAge": "48h",
         "timeout": "10s"
       }
-    },
-    {
-      "name": "mma-api-lutas",
-      "urls": ["https://mma-stats.herokuapp.com/v1/lutas"],
-      "cacheConfig": {
-        "strategy": "freshness",
-        "maxSize": 100,
-        "maxAge": "48h",
-        "timeout": "10s"
-      }
-    },
-    {
-      "name": "mma-api-organizacoes",
-      "urls": ["https://mma-stats.herokuapp.com/v1/organizacoes"],
-      "cacheConfig": {
-        "strategy": "freshness",
-        "maxSize": 100,
-        "maxAge": "48h",
-        "timeout": "10s"
-      }
-    },
-    {
-      "name": "mma-api-eventos",
-      "urls": ["https://mma-stats.herokuapp.com/v1/eventos"],
-      "cacheConfig": {
-        "strategy": "freshness",
-        "maxSize": 100,
-        "maxAge": "48h",
-        "timeout": "10s"
-      }
-    },
+    }
   ]
 }
