@@ -9,10 +9,10 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.233fb5a26515a5127bb0.js",
+        "/main.409f0dc976f8cb078493.js",
         "/polyfills.e376cc4a770bfa13f600.js",
         "/runtime.06daa30a2963fa413676.js",
-        "/styles.3ade56297548874555ac.css"
+        "/styles.ab829a4ed9f368881c05.css"
       ],
       "patterns": []
     },
@@ -26,14 +26,11 @@
         "/assets/css/table-responsive.css",
         "/assets/css/to-do.css",
         "/assets/css/zabuto_calendar.css",
-        "/assets/icons/icon-128x128.png",
-        "/assets/icons/icon-144x144.png",
-        "/assets/icons/icon-152x152.png",
-        "/assets/icons/icon-192x192.png",
-        "/assets/icons/icon-384x384.png",
-        "/assets/icons/icon-512x512.png",
-        "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png",
+        "/assets/icons/128.png",
+        "/assets/icons/256.png",
+        "/assets/icons/512.png",
+        "/assets/icons/72.png",
+        "/assets/icons/logo.PNG",
         "/assets/img/404.png",
         "/assets/img/500.png",
         "/assets/img/apple-touch-icon.png",
@@ -214,14 +211,17 @@
   ],
   "dataGroups": [
     {
-      "name": "jokes-api",
+      "name": "mma-api-lutadores",
       "patterns": [
-        "https:\\/\\/api\\.chucknorris\\.io\\/jokes\\/random"
+        "https:\\/\\/mma-stats\\.herokuapp\\.com\\/v1\\/lutadores",
+        "https:\\/\\/mma-stats\\.herokuapp\\.com\\/v1\\/lutas",
+        "https:\\/\\/mma-stats\\.herokuapp\\.com\\/v1\\/organizacoes",
+        "https:\\/\\/mma-stats\\.herokuapp\\.com\\/v1\\/eventos"
       ],
       "strategy": "freshness",
-      "maxSize": 20,
-      "maxAge": 86400000,
-      "timeoutMs": 5000,
+      "maxSize": 100,
+      "maxAge": 172800000,
+      "timeoutMs": 10000,
       "version": 1
     }
   ],
@@ -231,14 +231,11 @@
     "/assets/css/table-responsive.css": "7c73e89c17036f215f4c2766a7ec1b98cc68183e",
     "/assets/css/to-do.css": "a5db766e5371ad3586f8bfe43606a14f49beba0e",
     "/assets/css/zabuto_calendar.css": "b251ca84c07547ffd22337740790607d7371354d",
-    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/icons/128.png": "ec6419688450621532ed3f0a887dc2568236412f",
+    "/assets/icons/256.png": "709d8c80ee2c70ade380b26867fd44ef1c0a72c8",
+    "/assets/icons/512.png": "4115537e89ca2eaa35ddbe37a2dd3ce14e4eac04",
+    "/assets/icons/72.png": "6822a5bcb41abc19e42d826124f8e6dd3f882c6e",
+    "/assets/icons/logo.PNG": "93b40cb88eef7a9d35c093c4b50842db663bef12",
     "/assets/img/404.png": "216a6ca3ab5e7ea352a9ba0ac53d4541ab128d31",
     "/assets/img/500.png": "f855dda022008028a00ad26541cbf46ad70d25d2",
     "/assets/img/apple-touch-icon.png": "2a70c0370ffbaac9124d9eca97cadac47915c9d0",
@@ -413,12 +410,12 @@
     "/assets/vendors/lib/xchart/xcharts.css": "f1f6da77213dbd6f6a0eb1395784ace89196090f",
     "/assets/vendors/lib/xchart/xcharts.min.js": "8d488e234e9dab33471589ee0f9a772d1df54724",
     "/assets/vendors/lib/zabuto_calendar.js": "6ea1cc20fc878c0bd4881bc0dfd6fe69230da721",
-    "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "9b59e651f3fdc8d3a9a356bbe473fa1a51e12afd",
-    "/main.233fb5a26515a5127bb0.js": "4ddf482cbf01484866762b35fec7bdfad92a79b2",
+    "/favicon.ico": "4a41031bead4b3583b32eb069a2c4838a9a037eb",
+    "/index.html": "d6ee8b7c050195d290aafd145c0a912efd991e93",
+    "/main.409f0dc976f8cb078493.js": "8c436b01fe5cd01095ddfa0609ace415876f3a42",
     "/polyfills.e376cc4a770bfa13f600.js": "e986a8b31f4b9d0472e01ac3b1702e42c53dc377",
     "/runtime.06daa30a2963fa413676.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "/styles.3ade56297548874555ac.css": "235fdd4130a4df78f2d4bb2f005f21d273710d9f"
+    "/styles.ab829a4ed9f368881c05.css": "0216a503ab3b743dc7bd891f945d6e7ea61f199a"
   },
   "navigationUrls": [
     {
