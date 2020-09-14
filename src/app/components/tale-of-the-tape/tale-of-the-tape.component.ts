@@ -182,6 +182,7 @@ export class TaleOfTheTapeComponent implements OnInit {
       console.log(data);
       this.source = data;
       this.comboboxData = this.source.slice();
+
     }, (error) => {
       console.log(error);
     });

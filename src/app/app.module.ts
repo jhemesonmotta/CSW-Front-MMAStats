@@ -25,7 +25,8 @@ import { EventoService } from './services/eventos/eventos.service';
 import { LutadoresService } from './services/lutadores/lutadores.service';
 import { LutaService } from './services/lutas/lutas.service';
 import { OrganizacaoService } from './services/organizacoes/organizacoes.service';
-
+import { OverlayModule } from '@angular/cdk/overlay';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -50,14 +51,17 @@ import { OrganizacaoService } from './services/organizacoes/organizacoes.service
     NgxChartsModule,
     BrowserAnimationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    DropDownsModule
+    DropDownsModule,
+    OverlayModule,
+    MatProgressSpinnerModule
   ],
   providers: [
     DataService,
     EventoService,
     LutadoresService,
     LutaService,
-    OrganizacaoService
+    OrganizacaoService,
+    OverlayModule
   ],
   bootstrap: [AppComponent]
 })
