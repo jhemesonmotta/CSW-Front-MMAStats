@@ -26,7 +26,6 @@ import { LutadoresService } from './services/lutadores/lutadores.service';
 import { LutaService } from './services/lutas/lutas.service';
 import { OrganizacaoService } from './services/organizacoes/organizacoes.service';
 import { OverlayModule } from '@angular/cdk/overlay';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -52,8 +51,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     BrowserAnimationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     DropDownsModule,
-    OverlayModule,
-    MatProgressSpinnerModule
+    OverlayModule
   ],
   providers: [
     DataService,
