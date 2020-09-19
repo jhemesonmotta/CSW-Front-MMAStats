@@ -1,6 +1,10 @@
 <div class="row">
-  <div class="col-lg-12 main-chart">
 
+  <div class="col-lg-12 main-chart" *ngIf="carregando">
+    <app-loader></app-loader>
+  </div>
+  
+  <div class="col-lg-12 main-chart" *ngIf="!carregando">
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <h1>Tale of the Tape</h1>
@@ -46,7 +50,6 @@ Caso você não tenha tanta intimidade com os esportes de combate e esteja se pe
         </kendo-combobox>
       </div>
     </div>
-
 
     <section class="row" *ngIf="mostraTOTT()">
       <hr>

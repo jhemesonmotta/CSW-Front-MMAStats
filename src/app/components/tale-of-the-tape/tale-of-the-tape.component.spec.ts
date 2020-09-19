@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { LoaderComponent } from '../partials/loader/loader.component';
 
 import { TaleOfTheTapeComponent } from './tale-of-the-tape.component';
 
@@ -8,7 +9,7 @@ describe('TaleOfTheTapeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TaleOfTheTapeComponent ]
+      declarations: [ TaleOfTheTapeComponent, LoaderComponent ]
     })
     .compileComponents();
   }));

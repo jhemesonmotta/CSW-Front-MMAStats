@@ -12,6 +12,8 @@ import { LutadoresService } from 'src/app/services/lutadores/lutadores.service';
 export class TaleOfTheTapeComponent implements OnInit {
   @ViewChild('combo') public combo: ComboBoxComponent;
 
+  carregando = false;
+
   listaLutadores: Array<Lutador> = [];
   public selecionado1: Lutador;
   public selecionado2: Lutador;
@@ -176,15 +178,19 @@ export class TaleOfTheTapeComponent implements OnInit {
   }
 
   private buscarLutadores() {
+    this.carregando = true;
+
     console.log('buscarLutadores');
     this.lutadoresService.buscarLutadores().subscribe((data) => {
       console.log('data');
       console.log(data);
       this.source = data;
       this.comboboxData = this.source.slice();
-
+      this.carregando = false;
     }, (error) => {
+      console.log('error');
       console.log(error);
+      this.carregando = false;
     });
   }
 }

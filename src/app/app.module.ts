@@ -26,6 +26,7 @@ import { LutadoresService } from './services/lutadores/lutadores.service';
 import { LutaService } from './services/lutas/lutas.service';
 import { OrganizacaoService } from './services/organizacoes/organizacoes.service';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { LoaderComponent } from './components/partials/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
     FooterComponent,
     HomeComponent,
     SaibaMaisComponent,
+    LoaderComponent,
   ],
   imports: [
     routes,
