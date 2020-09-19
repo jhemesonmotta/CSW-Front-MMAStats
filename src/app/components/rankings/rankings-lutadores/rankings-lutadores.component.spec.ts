@@ -1,4 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { LutadoresService } from 'src/app/services/lutadores/lutadores.service';
 
 import { RankingsLutadoresComponent } from './rankings-lutadores.component';
 
@@ -8,7 +10,13 @@ describe('RankingsLutadoresComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RankingsLutadoresComponent ]
+      declarations: [ RankingsLutadoresComponent ],
+      imports: [
+        HttpClientModule
+      ],
+      providers: [
+        LutadoresService
+      ]
     })
     .compileComponents();
   }));
