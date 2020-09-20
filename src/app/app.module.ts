@@ -25,7 +25,6 @@ import { EventoService } from './services/eventos/eventos.service';
 import { LutadoresService } from './services/lutadores/lutadores.service';
 import { LutaService } from './services/lutas/lutas.service';
 import { OrganizacaoService } from './services/organizacoes/organizacoes.service';
-import { OverlayModule } from '@angular/cdk/overlay';
 import { LoaderComponent } from './components/partials/loader/loader.component';
 
 @NgModule({
@@ -52,16 +51,14 @@ import { LoaderComponent } from './components/partials/loader/loader.component';
     NgxChartsModule,
     BrowserAnimationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    DropDownsModule,
-    OverlayModule
+    DropDownsModule
   ],
   providers: [
     DataService,
     EventoService,
     LutadoresService,
     LutaService,
-    OrganizacaoService,
-    OverlayModule
+    OrganizacaoService
   ],
   bootstrap: [AppComponent]
 })
