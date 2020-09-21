@@ -5,3 +5,10 @@
 kendo-combobox.w-100.k-widget.k-combobox.k-header.k-combobox-clearable {
     width: 90%!important;
 }
+
+
+@media(max-width: 767px) {
+    .h5, h5 {
+        font-size: 12px;
+    }
+}

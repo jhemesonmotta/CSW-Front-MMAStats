@@ -2,3 +2,10 @@
     text-decoration: none;
     color: #797979;
 }
+
+@media(max-width: 767px) {
+    p {
+        font-size: 11px;
+        padding: 10px;
+    }
+}
