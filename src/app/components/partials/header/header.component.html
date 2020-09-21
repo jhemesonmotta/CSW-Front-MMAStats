@@ -1,28 +1,79 @@
 <header class="header black-bg">
-  <div class="sidebar-toggle-box">
-    <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-  </div>
-  <a href="/" class="logo"><b>MMA<span>Stats</span></b></a>
-  <div class="nav notify-row float-right" id="top_menu">
-    <ul class="nav top-menu">
-      <!-- <li class="dropdown">
-        <a>
-          <a href="#asd" target="_blank"><i class="fa fa-twitter"></i></a>
-        </a>
-      </li>
 
-      <li class="dropdown">
-        <a>
-          <a href="#asd" target="_blank"><i class="fa fa-facebook"></i></a>
-        </a>
-      </li> -->
+  <section id="menu-mobile" class="visible-xs visible-sm">
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <ul class="sidebar-menu" id="nav-accordion">
+          <li>
+            <a href="/">
+              <i class="fa fa-desktop"></i>
+              <span>Home</span>
+              </a>
+          </li>
+    
+          <li *ngIf="false">
+            <a href="rankings">
+              <i class="fa fa-dashboard"></i>
+              <span>Rankings</span>
+              </a>
+          </li>
+    
+          <li>
+            <a href="tale-of-the-tape?id=2">
+              <i class="fa fa-bar-chart-o"></i>
+              <span>Tale of the Tape</span>
+              </a>
+          </li>
+    
+          <li>
+            <a href="saiba-mais">
+              <i class="fa fa-info"></i>
+              <span>Saiba Mais</span>
+              </a>
+          </li>
+          <hr>
+          <li>
+            <a class="text-center" href="saiba-mais">
+              <span>O MMA Stats em um Tweet</span>
+            </a>
+            <p class="text-justify">
+              O MMASTATS é uma plataforma de divulgação de estatísticas, comparativos e rankings (de lutadores, academias e nações) relacionados ao MMA. Buscamos fornecer isso tudo através de um conteúdo apresentado de forma organizada e atrativa. Feito por fãs de MMA para fãs de MMA.</p>
+          </li>
+        </ul>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="sidebar-toggle-box" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+        </div>
+        <a href="/" class="logo"><b>MMA<span>Stats</span></b></a>
+      </nav>
+    </div>
+  </section>
 
-      <li class="dropdown" title="Instagram">
-        <a>
-          <a href="https://www.instagram.com/mmastats2020/" rel="noopener noreferrer" target="_blank">
-            <i class="fa fa-instagram"></i></a>
-        </a>
-      </li>
-    </ul>
-  </div>
+  <section id="menu-desktop" class="hidden-xs hidden-sm">
+    <a href="/" class="logo"><b>MMA<span>Stats</span></b></a>
+    <div class="nav notify-row float-right" id="top_menu">
+      <ul class="nav top-menu">
+        <!-- <li class="dropdown">
+          <a>
+            <a href="#asd" target="_blank"><i class="fa fa-twitter"></i></a>
+          </a>
+        </li>
+  
+        <li class="dropdown">
+          <a>
+            <a href="#asd" target="_blank"><i class="fa fa-facebook"></i></a>
+          </a>
+        </li> -->
+  
+        <li class="dropdown" title="Instagram">
+          <a>
+            <a href="https://www.instagram.com/mmastats2020/" rel="noopener noreferrer" target="_blank">
+              <i class="fa fa-instagram"></i></a>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
 </header>
