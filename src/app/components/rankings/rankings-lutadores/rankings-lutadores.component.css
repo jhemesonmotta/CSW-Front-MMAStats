@@ -1,0 +1,26 @@
+.position {
+    font-size: 20px;
+}
+
+.position-first {
+    color: #CAAD5D;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.position-second {
+    color: #777;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.position-third {
+    color: #866919;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.position-other {
+    font-weight: 600;
+    font-size: 14px;
+}
