@@ -2,27 +2,28 @@
     font-size: 20px;
 }
 
-.position-first {
+.position-first, .position-first a {
     color: #CAAD5D;
     font-weight: 900;
     font-size: 18px;
 }
 
-.position-second {
+.position-second, .position-second a {
     color: #777;
     font-weight: 800;
     font-size: 17px;
 }
 
-.position-third {
+.position-third, .position-third a {
     color: #866919;
     font-weight: 700;
     font-size: 17px;
 }
 
-.position-other {
+.position-other, .position-other a {
     font-weight: 600;
     font-size: 14px;
+    color: #797979;
 }
 
 .pd-l-r {
