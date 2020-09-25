@@ -10,8 +10,11 @@ import { LutadoresService } from 'src/app/services/lutadores/lutadores.service';
 export class RankingsLutadoresComponent implements OnInit {
 
   lutadores: Array<Lutador> = [];
+  lutadoresFiltrados: Array<Lutador> = [];
+
   carregando = false;
   qtdMostrada = 20;
+  categoria = 'Peso por Peso';
 
   constructor(public lutadoresService: LutadoresService) { }
 
@@ -32,12 +35,21 @@ export class RankingsLutadoresComponent implements OnInit {
   }
 
   public listaLutadores() {
-    return this.lutadores.slice(0, this.qtdMostrada);
+    if (this.categoria === 'Peso por Peso') {
+      this.lutadoresFiltrados = this.lutadores;
+    } else {
+      this.lutadoresFiltrados = this.lutadores.filter(lutador => lutador.categoria === this.categoria);
+    }
+    return this.lutadoresFiltrados.slice(0, this.qtdMostrada);
   }
 
   public carregarMais() {
     console.log('err');
     this.qtdMostrada = this.qtdMostrada + 10;
+  }
+
+  public trocaCategoria(categoria: string) {
+    this.categoria = categoria;
   }
 
   private buscarLutadores() {
