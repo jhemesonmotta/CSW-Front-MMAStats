@@ -8,11 +8,10 @@
       <div class="col-md-12 col-sm-12">
         <h3>Ranking de Lutadores - Peso por Peso</h3>
 
-        <div class="content-panel">
+        <div class="container-fluid container-scroll">
           <section id="ranking" class="row">
-
             <!-- REPETIR POR LUTADOR -->
-            <div class="col-md-12 ranking-row {{decideClasse(i)}}" *ngFor="let lutador of listaLutadores(); index as i">
+            <div class="row ranking-row {{decideClasse(i)}}" *ngFor="let lutador of listaLutadores(); index as i">
               <div class="col-md-2 col-xs-2">
                 <b class="position">
                   {{i+1}}°
@@ -32,6 +31,7 @@
                   {{lutador.score}}
                 </b>
               </div>
+
             </div>
             <!-- FIM REPETIR POR LUTADOR -->
 

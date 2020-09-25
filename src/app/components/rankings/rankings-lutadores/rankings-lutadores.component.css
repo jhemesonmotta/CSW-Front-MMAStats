@@ -24,3 +24,38 @@
     font-weight: 600;
     font-size: 14px;
 }
+
+.pd-l-r {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media(max-width: 767px) {
+    .position {
+        font-size: 15px;
+    }
+    
+    .position-first {
+        font-size: 12px;
+    }
+    
+    .position-second {
+        font-size: 12px;
+    }
+    
+    .position-third {
+        font-size: 12px;
+    }
+    
+    .position-other {
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .container-scroll {
+        overflow-x: auto;
+      }
+      .container-scroll > .row {
+        width: 133.33333333%; /* = 100% * 4/3 */
+      }
+}
