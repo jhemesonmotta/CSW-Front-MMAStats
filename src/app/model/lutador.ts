@@ -18,4 +18,5 @@ export interface Lutador {
     d_decisao: number;
     // derrotas_outras: number;
     empates: number;
+    score: number;
 }
