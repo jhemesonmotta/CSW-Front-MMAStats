@@ -11,7 +11,7 @@ export class RankingsLutadoresComponent implements OnInit {
 
   lutadores: Array<Lutador> = [];
   carregando = false;
-  qtdMostrada = 10;
+  qtdMostrada = 20;
 
   constructor(public lutadoresService: LutadoresService) { }
 
@@ -33,6 +33,11 @@ export class RankingsLutadoresComponent implements OnInit {
 
   public listaLutadores() {
     return this.lutadores.slice(0, this.qtdMostrada);
+  }
+
+  public carregarMais() {
+    console.log('err');
+    this.qtdMostrada = this.qtdMostrada + 10;
   }
 
   private buscarLutadores() {

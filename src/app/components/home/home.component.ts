@@ -17,34 +17,34 @@ export class HomeComponent implements OnInit {
   totalLutas: Array<any> = [
     {
       name: 'KO/TKO',
-      value: 1202
+      value: 1050
     },
     {
       name: 'Finalização',
-      value: 726
+      value: 755
     },
     {
       name: 'Decisão',
-      value: 2102
+      value: 1338
     },
     {
       name: 'Empate/NC',
-      value: 142
+      value: 65
     }
   ];
 
   totalLutadores: Array<any> = [
     {
-      name: 'USA',
-      value: 612
+      name: 'EUA',
+      value: 1371
     },
     {
-      name: 'Brazil',
-      value: 370
+      name: 'Brasil',
+      value: 283
     },
     {
-      name: 'Russia',
-      value: 104
+      name: 'Japão',
+      value: 162
     }
   ];
 
