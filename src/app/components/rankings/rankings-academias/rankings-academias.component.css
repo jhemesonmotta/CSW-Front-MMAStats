@@ -1,0 +1,86 @@
+.position {
+    font-size: 20px;
+}
+
+.position-first, .position-first a {
+    color: #CAAD5D;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.position-second, .position-second a {
+    color: #777;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.position-third, .position-third a {
+    color: #866919;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.position-other, .position-other a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #797979;
+}
+
+.pd-l-r {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.btn-ver {
+    background-color: #4ECDC4;
+    border-color: #4ECDC4;
+    color: white;
+}
+
+.cabecalho-rankings {
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-cabecalho {
+    margin-bottom: 15px!important;
+    background: #4ECDC4;
+    color: #2F323A;
+}
+
+@media(max-width: 767px) {
+    .position {
+        font-size: 15px;
+    }
+    
+    .position-first {
+        font-size: 12px;
+    }
+    
+    .position-second {
+        font-size: 12px;
+    }
+    
+    .position-third {
+        font-size: 12px;
+    }
+    
+    .position-other {
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .container-scroll {
+        overflow-x: auto;
+      }
+      .container-scroll > .row {
+        width: 133.33333333%; /* = 100% * 4/3 */
+      }
+}
