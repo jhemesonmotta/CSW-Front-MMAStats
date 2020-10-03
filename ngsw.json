@@ -9,7 +9,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.f3e75e387f0965d05f2f.js",
+        "/main.bcd6b6ad93d657fc8ed4.js",
         "/polyfills.e376cc4a770bfa13f600.js",
         "/runtime.06daa30a2963fa413676.js",
         "/styles.4ecf5e8590cbdd364d5e.css"
@@ -349,8 +349,8 @@
     "/assets/vendors/lib/xchart/xcharts.min.js": "8d488e234e9dab33471589ee0f9a772d1df54724",
     "/assets/vendors/lib/zabuto_calendar.js": "6ea1cc20fc878c0bd4881bc0dfd6fe69230da721",
     "/favicon.ico": "4a41031bead4b3583b32eb069a2c4838a9a037eb",
-    "/index.html": "34f0ef093e24f1b8c30a903cd0cc274ab795ab6c",
-    "/main.f3e75e387f0965d05f2f.js": "94bc50a48fd23b6dc467451bf7d60105b4968826",
+    "/index.html": "f413df45f71e46e4884de4e2dd1d4a2d42f5a649",
+    "/main.bcd6b6ad93d657fc8ed4.js": "2355a0b5f05599f04396f8fd316fa62f582ad5e5",
     "/polyfills.e376cc4a770bfa13f600.js": "e986a8b31f4b9d0472e01ac3b1702e42c53dc377",
     "/runtime.06daa30a2963fa413676.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "/styles.4ecf5e8590cbdd364d5e.css": "204d98c97491a8e5497e8632afad57ff4e610471"
