@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  mmasta test:
+  mmmastats_test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
