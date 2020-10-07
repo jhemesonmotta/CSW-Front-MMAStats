@@ -85,7 +85,7 @@
     ],
     "prefer-const": true,
     "quotemark":{
-      "severity": "warning",
+      "severity": "error",
       "options": [
         true,
         "double"
