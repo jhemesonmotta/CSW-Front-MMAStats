@@ -1,4 +1,4 @@
-import { Lutador } from "./lutador";
+import { Lutador } from './lutador';
 
 export class Equipe {
     nome: string;
