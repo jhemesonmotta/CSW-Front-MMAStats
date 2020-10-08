@@ -9,34 +9,34 @@ import { TaleOfTheTapeComponent } from './components/tale-of-the-tape/tale-of-th
 import { SaibaMaisComponent } from './components/saiba-mais/saiba-mais.component';
 
 export const ROUTES: Routes = [
-    {
-        path: '',
-        component: HomeComponent
-    },
-    {
-        path: 'rankings',
-        component: RankingsBaseComponent
-    },
-    {
-        path: 'rankings/nacoes',
-        component: RankingsNacoesComponent
-    },
-    {
-        path: 'rankings/lutadores',
-        component: RankingsLutadoresComponent
-    },
-    {
-        path: 'rankings/equipes',
-        component: RankingsAcademiasComponent
-    },
-    {
-        path: 'tale-of-the-tape',
-        component: TaleOfTheTapeComponent
-    },
-    {
-        path: 'saiba-mais',
-        component: SaibaMaisComponent
-    }
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'rankings',
+    component: RankingsBaseComponent
+  },
+  {
+    path: 'rankings/nacoes',
+    component: RankingsNacoesComponent
+  },
+  {
+    path: 'rankings/lutadores',
+    component: RankingsLutadoresComponent
+  },
+  {
+    path: 'rankings/equipes',
+    component: RankingsAcademiasComponent
+  },
+  {
+    path: 'tale-of-the-tape',
+    component: TaleOfTheTapeComponent
+  },
+  {
+    path: 'saiba-mais',
+    component: SaibaMaisComponent
+  }
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(ROUTES);

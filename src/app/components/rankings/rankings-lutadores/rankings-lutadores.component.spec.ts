@@ -21,7 +21,7 @@ describe('RankingsLutadoresComponent', () => {
         LutadoresService
       ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

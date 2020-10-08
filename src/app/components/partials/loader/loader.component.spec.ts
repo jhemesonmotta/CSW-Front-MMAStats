@@ -10,7 +10,7 @@ describe('LoaderComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ LoaderComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

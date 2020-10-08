@@ -59,18 +59,18 @@ export class RankingsLutadoresComponent implements OnInit {
     this.lutadoresService.buscarLutadores().subscribe((data) => {
       this.lutadores = data.filter(lutador => lutador.score !== null && lutador.score !== -999.999).sort((n1, n2) => {
         if (n1.score > n2.score) {
-            return -1;
+          return -1;
         }
         if (n1.score < n2.score) {
-            return 1;
+          return 1;
         }
         return 0;
-    });
+      });
 
-    console.log('this.lutadores');
-    console.log(this.lutadores);
+      console.log('this.lutadores');
+      console.log(this.lutadores);
 
-    this.carregando = false;
+      this.carregando = false;
     }, (error) => {
       console.log('error');
       console.log(error);

@@ -25,7 +25,7 @@ describe('AppComponent', () => {
         NgxChartsModule,
         ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
       ],
-       providers: [
+      providers: [
         SwUpdate
       ]
     }).compileComponents();

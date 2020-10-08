@@ -26,7 +26,7 @@ describe('TaleOfTheTapeComponent', () => {
         LutadoresService
       ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

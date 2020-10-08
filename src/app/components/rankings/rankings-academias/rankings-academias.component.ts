@@ -79,13 +79,13 @@ export class RankingsAcademiasComponent implements OnInit {
 
       this.equipes = this.equipes.sort((n1, n2) => {
         if (n1.pontuacao > n2.pontuacao) {
-            return -1;
+          return -1;
         }
         if (n1.pontuacao < n2.pontuacao) {
-            return 1;
+          return 1;
         }
         return 0;
-    });
+      });
 
       this.carregando = false;
     }, (error) => {

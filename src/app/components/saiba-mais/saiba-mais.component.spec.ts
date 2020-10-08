@@ -10,7 +10,7 @@ describe('SaibaMaisComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ SaibaMaisComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -31,9 +31,9 @@ export class TaleOfTheTapeComponent implements OnInit {
 
   handleFilter(value) {
     if (value.length >= 3) {
-        this.comboboxData = this.source.filter((s) => s.nome.toLowerCase().indexOf(value.toLowerCase()) !== -1);
+      this.comboboxData = this.source.filter((s) => s.nome.toLowerCase().indexOf(value.toLowerCase()) !== -1);
     } else {
-        this.combo.toggle(false);
+      this.combo.toggle(false);
     }
   }
 

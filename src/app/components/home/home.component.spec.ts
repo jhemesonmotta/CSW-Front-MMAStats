@@ -21,7 +21,7 @@ describe('HomeComponent', () => {
       ],
       providers: []
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
