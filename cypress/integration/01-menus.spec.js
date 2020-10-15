@@ -1,4 +1,4 @@
-describe('Meu primeiro teste', function() {
+describe('Menus Devem Estar Acessíveis', function() {
     
     it('Home está acessível', function() {
         cy.visit('http://localhost:4200');
@@ -7,20 +7,17 @@ describe('Meu primeiro teste', function() {
 
     it('Clica menu ranking lutadores', function() {
         cy.get('#rankings-lutadores').click();
-        cy.wait(2500);
-        cy.contains('Ranking de Lutadores');
+        cy.contains('Ranking de Lutadores', { timeout: 10000 });
     });
 
     it('Clica menu ranking equipes', function() {
         cy.get('#rankings-equipes').click();
-        cy.wait(2500);
-        cy.contains('Ranking de Equipes');
+        cy.contains('Ranking de Equipes', { timeout: 10000 });
     });
 
     it('Clica menu tott', function() {
         cy.get('#tale-of-the-tape').click();
-        cy.wait(2500);
-        cy.contains('Tale of the Tape');
+        cy.contains('Tale of the Tape', { timeout: 10000 });
     });
 
     it('Clica menu saiba mais', function() {
